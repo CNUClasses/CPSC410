@@ -74,6 +74,21 @@
                   <strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/projects/proj3/410_P3_s18.pdf"> Project 3 description</a></strong> Please note, I only want you to turn in 3 files (tester.cpp, print_ts.cpp and answers.txt). No extra directories or project files! This is so my tester can easily extract and place your code in my test harness.<br>
                   <strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/projects/proj3/print_ts.h"> print_ts.h</a></strong><br>
                   <strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/projects/proj3/tester.h"> tester.h</a></strong><br>
+                  <br><br>
+                  For this project, please DO NOT use the PRINTx functions the following way;<br>
+
+                  thread t1(PRINT4,s);<br>
+
+                  <p>It takes a very long time to start a thread, and a very short time to call the PRINTx function.  You spend almost all of your time starting and tearing down the threads.
+                     <br><br>Instead in <br>
+                     void startThreads(std::string s, int numThreads, WHICH_PRINT wp, int numTimesToPrint, int millisecond_delay);<br>
+
+                     launch numThreads threads passing the paraemeters std::string s,  WHICH_PRINT wp, int numTimesToPrint, int millisecond_delay to the thread function that you specify.
+                     <br>
+                     Please see sample project "Stopping a thread cleanly" for details
+                  </p>
+
+
                 
                   </td>
             </tr>
