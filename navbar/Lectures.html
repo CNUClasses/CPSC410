@@ -187,7 +187,8 @@
 						<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/threads_raceconditions_criticalsections.pdf">Threads, Race conditions, critical sections, atomics</a></strong>A multithreaded introduction<br>
 						Takeaways:<br>
 						<li>Threads - know how to set up your C++ project to use threads (compiler set to use C++ 11 minimum, add the pthread library).  See <a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/Eclipse_Customizations.pdf" > Eclipse Customizations</a> for more info.</li>
-						Threaded applications can be proven incorrect, but not correct since you cant control the scheduler.  Therefore testing is not as helpful.  Your only defense is to write perfect code, to do this there are some rules to follow. <br>Rigid Requirements!<br>
+						Threaded applications can be proven incorrect, but not correct since you cant control the scheduler.  Therefore testing is not as helpful.  Your only defense is to write perfect code, to do this there are some rules to follow. <br>
+						Rigid Requirements!<br>
 						<ul>
 							<li>If you start a thread (thread t1(fun)) you must wait for it to finish (t1.join())!</li>
 							<li>Never, ever rely on knowledge of system behavior to predict thread run order! You cant tell! (see <a href="https://github.com/CNUClasses/Thread_Race_Condition.git">Thread_Race_Condition</a>) </li>
@@ -227,6 +228,12 @@
 				<td class="style_white "><em>10</em></td>
 				<td class="style_white ">	
 					Please read Chapter 28: Locks<BR>
+						Mutexes- Rigid Requirements!<br>
+						<ul>
+							<li>Your mutexes are almost certainly going to be global variables (they will NOT be local variables)</li>
+							<li>Prefer a lock_guard over a raw mutexe since it automatically unlocks when it goes out of scope</li>
+							<li>To use: Identify minimal critical sections, then wrap critical section with an auto unlocking lock_guard</li>
+						</ul>
 
 							<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chapter_5_handwritten_notes_part2_mutex.pdf"> Mutex notes </a></strong> Lecture notes.<br>						 
 							<!-- <strong><a href="http://www.drdobbs.com/tools/avoiding-classic-threading-problems/231000499"> Avoiding Classic Threading Problems</a></strong> ADVANCED DISCUSSION- Excellent article, dont worry about openMP and Intel Thread Checker<br> -->
