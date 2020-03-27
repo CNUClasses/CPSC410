@@ -84,8 +84,12 @@
                      void startThreads(std::string s, int numThreads, WHICH_PRINT wp, int numTimesToPrint, int millisecond_delay);<br>
 
                      launch numThreads threads passing the paraemeters std::string s,  WHICH_PRINT wp, int numTimesToPrint, int millisecond_delay to the thread function that you specify.
-                     <br>
-                     Please see sample project "Stopping a thread cleanly" for details
+                     <br><br>
+                     Please see sample project "Stopping a thread cleanly" for details on cooperatively stopping a thread<br>
+                      Please do not call joinThreads in startThreads!  You should always code to the API.  If something is wrong with the API then get buy-in from all stakeholders before you 
+                        implement extra behaviour.<br>
+                        Please do not place a main() function in any of the files you turn in.  As mentioned in the project writeup, I am going to use my main(), defined in my main.cpp, and your files to test your code.<br>
+                     </b>
                   </p>
 
 
