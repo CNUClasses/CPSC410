@@ -277,7 +277,6 @@
 					
 					<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/Condition_Variables.pdf"> Condition Variables</a></strong> Demonstration slides<br>	
 					<strong style="color: #cc0000">Test 2, 4/21/20.  Covers all multi-threaded material and projects 3,4. This test is an individual effort. You may use any resources except for other people. </strong> <br> 
-					<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/producer_consumer_notes.pdf"> Producer Consumer, A common programming task</a></strong> Outline, tools used (mutex and Condition variables). Flow of solution.<br>
 				</td>
 				<td class="style_white ">
 					<strong><a href="https://github.com/CNUClasses/410_readers_writers_mutexes.git">Readers Writers lock, favoring readers using just mutexes</a></strong><br/> 
@@ -290,19 +289,19 @@
 				
 					<strong><a href="https://github.com/CNUClasses/410_ConditionVar_Mutex.git">Simple signaling between threads using a mutex a condition variable and a lock guard</a></strong><br/> 
 					<strong><a href="https://github.com/CNUClasses/Simple_Condition_Variable.git">Simple Condition Variables, used to order operations</a></strong><br/> 
-					<strong><a href="https://github.com/CNUClasses/410_start_threads_using_condition_var.git">Making all threads start at the same time using Condition Variables</a></strong> Also demonstrates the efficiency difference between condition variables and busy waiting on a global value (spinning)<br/>
-					<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer.git"> Simple producer consumer problem. Producer signals consumer.</a></strong>Producer produces as fast as it can and notifies consumer, consumer consumes as fast as it can. Demoes effecient 1 way thread communication. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. Can have multiple consumers.<br>
-					<strong><a href="https://github.com/CNUClasses/410_Producer_many_consumers.git"> Producer consumer problem using mutex and condition variables</a></strong> Multiple consumers a single producer <br />
 					
 				
 				</td>
 			</tr>
-<!--		<tr>
+		<tr>
 				<td class="style_white "><em>12</em></td>
 				<td class="style_white ">	
+					<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/producer_consumer_notes.pdf"> Producer Consumer, A common programming task</a></strong> Outline, tools used (mutex and Condition variables). Flow of solution.<br>
+					
+					
 					<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/410_Semaphore.pdf"> Semaphores </a></strong><br>
 					<!-- DEADLOCK -->
- <!-- 					<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chap5_dining_philosophers.pdf"> Using semaphores to solve dining philosophers problem </a></strong>handwritten lecture notes<br>
+  					<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chap5_dining_philosophers.pdf"> Using semaphores to solve dining philosophers problem </a></strong>handwritten lecture notes<br>
 			
 					<!-- what happens when notify_one called and not notify all -->
 					<!-- flesh out semaphore description documents-->
@@ -311,22 +310,26 @@
 
 
 
- <!-- 				</td>
+  				</td>
 				<td class="style_white ">
+					<strong><a href="https://github.com/CNUClasses/410_start_threads_using_condition_var.git">Making all threads start at the same time using Condition Variables</a></strong> Also demonstrates the efficiency difference between condition variables and busy waiting on a global value (spinning)<br/>
+					<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer.git"> Simple producer consumer problem. Producer signals consumer.</a></strong>Single Producer, Single Consumer: Producer produces as fast as it can and notifies consumer, consumer consumes as fast as it can. Demoes effecient 1 way thread communication. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. Can have multiple consumers.<br>
+					<strong><a href="https://github.com/CNUClasses/410_Producer_many_consumers.git"> Producer consumer problem using mutex and condition variables</a></strong> Single Producer, Multiple Consumers <br />
+					
 					<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer_Back_And_Forth.git">Complex producer consumer problem, Producer signals consumer and vice versa</a></strong>Producer produces one then notifies consumer, consumer consumes one then notifies producer. Demoes effecient 2 way thread communications. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. <br>
-					<strong><a href="https://github.com/CNUClasses/WHATS_WRONG_WITH_THIS.git">Whats wrong with this code?</strong></a>Run it a few times, notice it locks up occasionally?  <br>
+<!--					<strong><a href="https://github.com/CNUClasses/WHATS_WRONG_WITH_THIS.git">Whats wrong with this code?</strong></a>Run it a few times, notice it locks up occasionally?  <br>
 						Why does this happen? How do you fix it?<br>
 						20 percentage points added to the project 4 grade of the first person who answers these 2 questions correctly!<br>
 						
 						BTW this code serves as a bad example thats only suitable for learning.  So	don't use any of it!<br><BR>
-
+-->
 					<strong><a href="https://github.com/CNUClasses/410_Producer_wait_for_all_consumers_ready_using_Semaphore.git"> Forcing a thread to wait until all other threads signal that they are ready using semaphores</a></strong> Semaphores for cordination example<br />
 					<strong><a href="https://github.com/CNUClasses/410_Semaphore_ConditionVar_Mutex_Thread_Producer_Consumer.git"> Single Producer, single consumer solution using semaphores</a></strong> Semaphore example<br />
 					<strong><a href="https://github.com/CNUClasses/410_Semaphore_Dining_Philosophers.git">Dining philosophers solution using semaphores (requires below library project)</a></strong><br/> 
 					<strong><a href="https://github.com/CNUClasses/410_Semaphore_Lib.git">Semaphore class library (inherently useful stuff should be placed in a library)</a></strong><br/>
 				</td>
 			</tr>
-
+<!--
 			<tr>
 					<td class="style_white "><em>13,14</em></td>
 					<td class="style_white ">
