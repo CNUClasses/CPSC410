@@ -231,17 +231,20 @@
 		</tr>
 		<tr>
 			<td class="style_white "><em>9</em></td>
-			<td class="style_white ">	
-				<strong><a href="https://eli.thegreenplace.net/2016/c11-threads-affinity-and-hyperthreading/">(Advanced) C++11 threads, affinity and hyperthreading</a>Excellent! relates C++ threads to processor hardware</strong> <br>				
-				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/threads1.pdf"> Threads an Introduction</a></strong><br> 
-					
-				</td>
-			<td class="style_white ">	
-				<strong><a href="https://github.com/CNUClasses/thread_simple.git"> Single thread demo</a></strong> Use disassembly view to see that each c++ statement is equivelent to multiple assembly instructions.  An interrupt can be serviced after any assembly instruction, which may be in the middle of a C++ instruction<br />
-		
-			</td>
-		</tr>
+			<td><strong><a href="https://eli.thegreenplace.net/2016/c11-threads-affinity-and-hyperthreading/">(Advanced) C++11 threads, affinity and hyperthreading</a>Excellent! relates C++ threads to processor hardware</strong> <br><br>
+			<strong style="color: #cc0000">NOTE: Projects that use threads require at least C++ 11 support.<br>
+				  To enable it, click on <br>the project name->Properties-> 
+				C/C++ Build->Settings->GCC C++ Compiler-> Dialect ->'Language Standard' dropdown.<br>
+				  Then choose at least ISO C++11(-std=c++0x).  <br>
+				  Make sure you include the pthread library under GCC C++ linker->Libraries.  Add pthread in the Libraries (-l) pane on the right.</strong><br>                                  
+                <br>
+			<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/threads1.pdf"> Threads an Introduction</a></strong><br> 
 
+		</td>
+		<td class="style_white ">
+			<strong><a href="https://github.com/CNUClasses/thread_simple.git"> Single thread demo</a></strong> Use disassembly view to see that each c++ statement is equivelent to multiple assembly instructions.  An interrupt can be serviced after any assembly instruction, which may be in the middle of a C++ instruction<br />
+		</td>
+		</tr>
 	</table>
     </section>
 
