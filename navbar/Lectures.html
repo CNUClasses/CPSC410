@@ -286,7 +286,7 @@
 						Mutexes<br>
 						<ul>
 							<li>Mutexes are almost certainly going to be global variables (they will NOT be local variables)</li>
-							<li>Mutexes function as a traffic cop, they allow 1 thread in a critical section at a time(others are blocked)</li>
+							<li>Mutexes function as a traffic cop, they allow 1 thread in a critical section at a time(others threads are blocked)</li>
 							<li>Prefer a lock_guard over a raw mutex since it automatically unlocks when it goes out of scope</li>
 							<li>To use: Identify minimal critical sections, then wrap critical section with an auto unlocking lock_guard</li>
 						</ul>
