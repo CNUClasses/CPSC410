@@ -330,7 +330,7 @@
 		</tr>
 		<tr>
 			<td class="style_white "><em>12</em></td>
-			<td>
+			<td class="style_white ">
 			Please read Chapter 30, Condition Variables<br>
 			<strong><a href="http://en.cppreference.com/w/cpp/thread/condition_variable"> Condition Variables, definition and sample code article</a></strong> <br>									
 
@@ -338,15 +338,9 @@
 				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/Condition_Variables.pdf"> Condition Variables</a></strong> Demonstration slides<br>	
 				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/producer_consumer.pdf"> Producer Consumer, A common programming task</a></strong> Outline and solution flow.
 				<strong><a href="https://drive.google.com/file/d/1J5awJxUItGoApR0JEW6iYubhHJiLQt37/view?usp=sharing">VIDEO</a> <BR>
-				
-					
-					
-				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/Semaphore.pdf"> Semaphores </a></strong>Think of semaphores as bouncers at a nightclub. There are a dedicated number of people that are allowed in the club at once. If the club is full no one is allowed to enter, but as soon as 
-				one person leaves another person might enter. It's simply a way to limit the number of consumers for a specific resource. For example, to limit the number of simultaneous calls to a database in an application.<br>
-			
+							
 				<br><strong style="color: #cc0000">Test 2, 12/3/20.  Emphasizes all material from week 8 through week 13 and project 3. </strong> <br> 
 				<!-- what happens when notify_one called and not notify all -->
-					<!-- flesh out semaphore description documents-->
 			</td>
 			<td class="style_white ">	
 				<strong><a href="https://github.com/CNUClasses/Simple_Condition_Variable.git">Simple Condition Variables</a></strong>Ordering thread operations.  Signaling between threads using a mutex a condition variable and a unique_lock<br/> 				
@@ -360,15 +354,73 @@
 
 			</td>	
 		</tr>
+		<tr>
+			<td class="style_white "><em>14</em></td>
+			<td class="style_white ">
+				Please read Chapter 36: I/O devices<br>
+				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/Semaphore.pdf"> Semaphores </a></strong>Think of semaphores as bouncers at a nightclub. There are a dedicated number of people that are allowed in the club at once. If the club is full no one is allowed to enter, but as soon as 
+				one person leaves another person might enter. It's simply a way to limit the number of consumers for a specific resource. For example, to limit the number of simultaneous calls to a database in an application.Or to limit the number of widgets produced before stopping and waiting for a consumer to catch up.<br>
+				
+				<!-- DEADLOCK -->
+		 
+				<!-- what happens when notify_one called and not notify all -->
+				<!-- flesh out semaphore description documents-->
+				<!-- light switch is readers/writers-->
+				<!-- change to semaphores<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/Mutexes_Readers_Writers.pdf"> Using mutexes to solve readers/writers problem </a></strong>Lecture notes<br>
+			-->
+			</td>
+			<td class="style_white ">
+				<strong><a href="https://github.com/CNUClasses/code_review_files.git"> Code review files</a></strong> A illustrated collection of poor programming habbits and how to fix them.  See POORLY_CODED and FIXED versions of each file.<br>				
 
-					<!-- change to semaphores<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/Mutexes_Readers_Writers.pdf"> Using mutexes to solve readers/writers problem </a></strong>Lecture notes<br>
-			<strong><a href="https://github.com/CNUClasses/410_readers_writers_mutexes.git">Readers Writers lock, favoring readers</a></strong> An incorrect solution using mutexes, and a correct one using Semaphores</a><br>
-			In ReaderWriterlock.h comment out line '#define USE_SEMAPHORE' to use incorrect mutex solution, otherwise the correct Semaphore solution is used.
-			Note: Mutexes are incorrect since the thread that locks a mutex must be the same thread that unlocks the mutex. The mutex form of this solution makes no provision for this.<br>  The fix?  Use a semaphore instead of a mutex since it has no such restriction.  </a></strong><br/> 
-			 -->
+<!--					<strong><a href="https://github.com/CNUClasses/WHATS_WRONG_WITH_THIS.git">Whats wrong with this code?</strong></a>Run it a few times, notice it locks up occasionally?  <br>
+						Why does this happen? How do you fix it?<br>
+						20 percentage points added to the project 4 grade of the first person who answers these 2 questions correctly!<br>
+						
+						BTW this code serves as a bad example thats only suitable for learning.  So	don't use any of it!<br><BR>
+-->
+					<!-- get rid of this project it does not work <strong><a href="https://github.com/CNUClasses/410_Producer_wait_for_all_consumers_ready_using_Semaphore.git"> Forcing a thread to wait until all other threads signal that they are ready using semaphores</a></strong> Semaphores for cordination example<br /> -->
+					
+					<strong><a href="https://github.com/CNUClasses/410_Semaphore_ConditionVar_Mutex_Thread_Producer_Consumer.git"> Single Producer, single consumer solution using semaphores</a></strong> Semaphore example<br />
+					<!--<strong><a href="https://github.com/CNUClasses/410_readers_writers_mutexes.git">Readers Writers lock, favoring readers</a></strong> An incorrect solution using mutexes, and a correct one using Semaphores</a><br>
+					In ReaderWriterlock.h comment out line '#define USE_SEMAPHORE' to use incorrect mutex solution, otherwise the correct Semaphore solution is used.
+					Note: Mutexes are incorrect since the thread that locks a mutex must be the same thread that unlocks the mutex. The mutex form of this solution makes no provision for this.<br>  The fix?  Use a semaphore instead of a mutex since it has no such restriction.  </a></strong><br/> 
+					 -->
 
-			<!-- <strong><a href="https://github.com/CNUClasses/code_review_files.git"> Code review files</a></strong> A illustrated collection of poor programming habbits and how to fix them.  See POORLY_CODED and FIXED versions of each file.<br>				 -->
+			</td>
+		</tr>
 
+		<!--DID NOT DO (RAN OUT OF TIME) 
+			<tr>
+			<td class="style_white "><em>13</em></td>
+			<td class="style_white ">
+				Please read Chapter 36: I/O devices<br>
+
+					 <strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chap5_dining_philosophers.pdf"> Using semaphores to solve dining philosophers problem </a></strong>handwritten lecture notes<br>
+
+					<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/36_IO_Devices.pdf">Chapter 36: I/O devices </a></strong><br>
+					<!-- <strong style="color: #cc0000">Test 2, 11/21/19.  Covers all multi-threaded material and projects 3,4. You may bring 1 sheet of paper (8.5"x11") with notes on both sides.</strong> <br>  -->
+		<!--	
+			</td>
+			<td class="style_white ">
+			<strong><a href="https://github.com/CNUClasses/410_Semaphore_Dining_Philosophers.git">Dining philosophers solution using semaphores (requires below library project)</a></strong><br/> 
+			<strong><a href="https://github.com/CNUClasses/410_Semaphore_Lib.git">Semaphore class library (inherently useful stuff should be placed in a library)</a></strong><br/>
+
+			</td>
+		</tr> -->
+
+
+
+
+
+
+
+
+
+
+
+		
+
+			
 
 	</table>
     </section>
