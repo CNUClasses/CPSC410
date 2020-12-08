@@ -366,10 +366,6 @@
 				<!-- DEADLOCK -->
 		 
 				<!-- what happens when notify_one called and not notify all -->
-				<!-- flesh out semaphore description documents-->
-				<!-- light switch is readers/writers-->
-				<!-- change to semaphores<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/Mutexes_Readers_Writers.pdf"> Using mutexes to solve readers/writers problem </a></strong>Lecture notes<br>
-			-->
 			</td>
 			<td class="style_white ">
 				<strong><a href="https://github.com/CNUClasses/code_review_files.git"> Code review files</a></strong> A illustrated collection of poor programming habbits and how to fix them.  See POORLY_CODED and FIXED versions of each file.<br>				
@@ -383,14 +379,43 @@
 					<!-- get rid of this project it does not work <strong><a href="https://github.com/CNUClasses/410_Producer_wait_for_all_consumers_ready_using_Semaphore.git"> Forcing a thread to wait until all other threads signal that they are ready using semaphores</a></strong> Semaphores for cordination example<br /> -->
 					
 					<strong><a href="https://github.com/CNUClasses/410_Semaphore_ConditionVar_Mutex_Thread_Producer_Consumer.git"> Single Producer, single consumer solution using semaphores</a></strong> Semaphore example<br />
-					<!--<strong><a href="https://github.com/CNUClasses/410_readers_writers_mutexes.git">Readers Writers lock, favoring readers</a></strong> An incorrect solution using mutexes, and a correct one using Semaphores</a><br>
-					In ReaderWriterlock.h comment out line '#define USE_SEMAPHORE' to use incorrect mutex solution, otherwise the correct Semaphore solution is used.
-					Note: Mutexes are incorrect since the thread that locks a mutex must be the same thread that unlocks the mutex. The mutex form of this solution makes no provision for this.<br>  The fix?  Use a semaphore instead of a mutex since it has no such restriction.  </a></strong><br/> 
-					 -->
+					
 
 			</td>
 		</tr>
 
+		
+
+		<!-- <tr>
+			<td class="style_white "><em>15</em></td>
+			<td class="style_white ">
+				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/36_IO_Devices.pdf">Chapter 36: I/O devices </a></strong><br>
+				
+			</td>
+			<td class="style_white ">
+					
+
+			</td>
+		</tr> -->
+		<tr>
+			<td class="style_white "><em>15</em></td>
+			<td class="style_white ">
+		
+				<!-- flesh out semaphore description documents-->
+				<!-- light switch is readers/writers-->
+				<!-- change to semaphores-->
+				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/Mutexes_Readers_Writers.pdf"> Using mutexes to solve readers/writers problem </a></strong>Lecture notes<br>
+				
+		
+			</td>
+			<td class="style_white ">
+					<strong><a href="https://github.com/CNUClasses/410_readers_writers_mutexes.git">Readers Writers lock, favoring readers</a></strong> An incorrect solution using mutexes, and a correct one using Semaphores</a><br>
+					In ReaderWriterlock.h comment out line '#define USE_SEMAPHORE' to use incorrect mutex solution, otherwise the correct Semaphore solution is used.
+					Note: Mutexes are incorrect since the thread that locks a mutex must be the same thread that unlocks the mutex. The mutex form of this solution makes no provision for this.<br>  The fix?  Use a semaphore instead of a mutex since it has no such restriction.  </a></strong><br/> 
+					<strong><a href="https://github.com/CNUClasses/410_Semaphore_Lib.git">Semaphore class library (inherently useful stuff should be placed in a library)</a></strong><br/>
+
+			</td>
+		</tr> 
 		<!--DID NOT DO (RAN OUT OF TIME) 
 			<tr>
 			<td class="style_white "><em>13</em></td>
