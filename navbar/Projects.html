@@ -43,7 +43,7 @@
            
          <tr>	
             <td class="style_white "><em>1</em></td>
-            <td class="style_white ">9/19/20</td>
+            <td class="style_white ">1/30/21</td>
             <td class="style_white ">
                <strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/projects/proj1/410_P1_FileIO.pdf"> Project 1 description</a></strong><br>
                <strong><a href=" https://github.com/CNUClasses/410_Proj1_Student.git"> Project repo</a></strong> All of your work takes place in utilities.cpp<br>
@@ -51,57 +51,6 @@
          </tr> 
   <!--   
    a shell program? -->     
-         <tr>  
-               <td class="style_white "><em>2</em></td>
-               <td class="style_white ">10/6/20</td>
-               <td class="style_white ">
-                  <strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/projects/proj2_scheduler/410_P2_scheduler.pdf"> Project 2 description</a></strong><br>
-                  <strong><a href="https://github.com/CNUClasses/410_proj2_scheduler.git"> Project 2 Scheduler Skeleton Project</a></strong><BR>
-                     NOTE: This project will not link until you have provided an implementation for 6 cpp files as outlined in the project description. <BR>
-                     Please see the data folder for sample data and sample output given this data<BR>
-                     NOTE: Due date extended.  So you can ask me questions next week if you would like.
-              </td>
-            </tr> 
-             
-
-             <tr>  
-               <td class="style_white "><em>3</em></td>
-               <td class="style_white ">11/19/20</td>
-               <td class="style_white ">
-                  <strong style="color: #cc0000">NOTE: This (and all following) project requires C++ 11 support.  It is already enabled for this application (assuming you are using the GNU toolchain).  In general, to enable C++11 support, click on the project name->Properties-> 
-                C/C++ Build->Settings->GCC C++ Compiler-> Dialect ->'Language Standard' dropdown.  Then choose at least ISO C++11(-std=c++0x).  Make sure you include the pthread library under GCC C++ linker->Libraries.  Add pthread in the Libraries (-l) pane on the right.</strong><br>                                  
-                  <strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/projects/proj3/410_P3_s18.pdf"> Project 3 description</a></strong> Please note, I only want you to turn in 3 files (tester.cpp, print_ts.cpp and answers.txt). No extra directories or project files! This is so my tester can easily extract and place your code in my test harness.<br>
-                  <strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/projects/proj3/print_ts.h"> print_ts.h</a></strong><br>
-                  <strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/projects/proj3/tester.h"> tester.h</a></strong><br>
-                  <br><br>
-                  For this project, please DO NOT use the PRINTx functions the following way;<br>
-
-                  thread t1(PRINT4,s);<br>
-
-                  <p>It takes a very long time to start a thread, and a very short time to call the PRINTx function.  You spend almost all of your time starting and tearing down the threads.
-                     <br><br>Instead in <br>
-                     void startThreads(std::string s, int numThreads, WHICH_PRINT wp, int numTimesToPrint, int millisecond_delay);<br>
-
-                     launch numThreads threads passing the paraemeters std::string s,  WHICH_PRINT wp, int numTimesToPrint, int millisecond_delay to the thread function that you specify.
-                     <br><br>
-                     Please see sample project "Stopping a thread cleanly" for details on cooperatively stopping a thread<br>
-                      Please do not call joinThreads in startThreads!  You should always code to the API.  If something is wrong with the API then get buy-in from all stakeholders before you 
-                        implement extra behaviour.<br>
-                        Please do not place a main() function in any of the files you turn in.  As mentioned in the project writeup, I am going to use my main(), defined in my main.cpp, and your files to test your code.<br>
-                     </b>
-                  </p>
-                  </td>
-            </tr> -->
-          
-            <tr>  
-               <td class="style_white "><em>4</em></td>
-               <td class="style_white ">12/12/20</td>
-               <td class="style_white ">
-                  <strong><a href="https://github.com/CNUClasses/410_proj4_SKELETON.git"> Project 4 Skeleton project</a></strong><br />                                              
-                  <strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/projects/proj4/410_P4.pdf"> Project 4 description</a></strong>Please note, I only want you to turn in 3 files. No extra directories or project files! This is so my tester can easily extract and place your code in my test harness.<br>
-               <br> Hint: If you make your own input files (like the provided in1.txt, in2.txt, in3.txt), do not have any extra CRLFs (blank lines) in them<br>   
-               <br> Hint: externs.h has all the externed global variables (mutexes, condition variables, datastructures, b_waiterIsFinished etc.).  These are variables that are intended to be global to every file in the project that includes externs.h and are defined in 410_proj4.cpp   Include externs.h in all the files that need access to these global variables.<br>
-               </td>
-            </tr> 
+ 
            </table>
     </section>
