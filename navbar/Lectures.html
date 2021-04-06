@@ -321,9 +321,31 @@
 			<strong><a href="https://github.com/CNUClasses/simple_deadlock.git"> Simple Deadlock examples</a></strong> Very simple examples of how deadlock can occur<br /> 
 			<strong><a href="https://github.com/CNUClasses/8_Deadlock.git"> A slightly more complex deadlock example</a></strong> <br /> <br>	
 
+		</td>	
+	</tr>
+	<tr>
+		<td class="style_white "><em>12</em></td>
+		<td class="style_white ">
+		Please read Chapter 30, Condition Variables<br>
+		<strong><a href="http://en.cppreference.com/w/cpp/thread/condition_variable"> Condition Variables, definition and sample code article</a></strong> <br>									
+
+			<strong><a href="https://baptiste-wicht.com/posts/2012/04/c11-concurrency-tutorial-advanced-locking-and-condition-variables.html"> Recursive Locks portion only</a></strong> This guy writes excellent C++ tutorials<br>
+			<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/Condition_Variables.pdf"> Condition Variables</a></strong> Demonstration slides<br>	
+			<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/producer_consumer.pdf"> Producer Consumer, A common programming task</a></strong> Outline and solution flow.
+						
+			<!-- what happens when notify_one called and not notify all -->
 		</td>
-		
-		
+		<td class="style_white ">	
+			<strong><a href="https://github.com/CNUClasses/Simple_Condition_Variable.git">Simple Condition Variables</a></strong>Ordering thread operations.  Signaling between threads using a mutex a condition variable and a unique_lock<br/> 				
+			<strong><a href="https://github.com/CNUClasses/410_ConditionVar_Mutex.git">Simple Condition Variables</a></strong>>What happens when you do not wait on a condition<br/> 
+			<strong><a href="https://github.com/CNUClasses/410_start_threads_using_condition_var.git">Making all threads start at the same time using Condition Variables</a></strong> Also demonstrates the efficiency difference between condition variables and busy waiting on a global value (spinning)<br/>
+
+			<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer.git"> Simple producer consumer problem. Producer signals consumer.</a></strong>Single Producer, Single Consumer: Producer produces as fast as it can and notifies consumer, consumer consumes as fast as it can. Demoes effecient 1 way thread communication. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. Can have multiple consumers.<br>
+			<strong><a href="https://github.com/CNUClasses/410_Producer_many_consumers.git"> Producer consumer problem using mutex and condition variables</a></strong> Single Producer, Multiple Consumers <br />
+			
+			<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer_Back_And_Forth.git">Complex producer consumer problem, Producer signals consumer and vice versa</a></strong>Producer produces one then notifies consumer, consumer consumes one then notifies producer. Demoes effecient 2 way thread communications. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. <br>
+
+		</td>	
 	</tr>
 
 
