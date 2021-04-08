@@ -228,8 +228,10 @@
 	</tr>
 	<tr>
 		<td class="style_white "><em>9</em></td>
-		Please read Chapter 26: Concurrency: An Introduction<BR>
-		<td><strong><a href="https://eli.thegreenplace.net/2016/c11-threads-affinity-and-hyperthreading/">(Advanced) C++11 threads, affinity and hyperthreading</a>Excellent! relates C++ threads to processor hardware</strong> <br><br>
+		
+		<td>
+			Please read Chapter 26: Concurrency: An Introduction<BR>
+			<strong><a href="https://eli.thegreenplace.net/2016/c11-threads-affinity-and-hyperthreading/">(Advanced) C++11 threads, affinity and hyperthreading</a>Excellent! relates C++ threads to processor hardware</strong> <br><br>
 		<strong style="color: #cc0000">NOTE: Projects that use threads require at least C++ 11 support.<br>
 			  To enable it, click on <br>the project name->Properties-> 
 			C/C++ Build->Settings->GCC C++ Compiler-> Dialect ->'Language Standard' dropdown.<br>
@@ -326,7 +328,9 @@
 	<tr>
 		<td class="style_white "><em>12</em></td>
 		<td class="style_white ">
-		Please read Chapter 30, Condition Variables<br>
+		Please read Chapter 30, Condition Variables<br><BR>
+			<strong style="color: #00cc00">What if you want thread 1 to wait until thread 2 says go? <br>
+				You cannot do this with just a mutex. Condition Variables solve this problem. </strong><br> 
 		<strong><a href="http://en.cppreference.com/w/cpp/thread/condition_variable"> Condition Variables, definition and sample code article</a></strong> <br>									
 
 			<strong><a href="https://baptiste-wicht.com/posts/2012/04/c11-concurrency-tutorial-advanced-locking-and-condition-variables.html"> Recursive Locks portion only</a></strong> This guy writes excellent C++ tutorials<br>
@@ -337,7 +341,7 @@
 		</td>
 		<td class="style_white ">	
 			<strong><a href="https://github.com/CNUClasses/Simple_Condition_Variable.git">Simple Condition Variables</a></strong>Ordering thread operations.  Signaling between threads using a mutex a condition variable and a unique_lock<br/> 				
-			<strong><a href="https://github.com/CNUClasses/410_ConditionVar_Mutex.git">Simple Condition Variables</a></strong>>What happens when you do not wait on a condition<br/> 
+			<strong><a href="https://github.com/CNUClasses/410_ConditionVar_Mutex.git">Simple Condition Variables</a></strong>>What happens when you do not put cv.wait(...) in a while loop. (BTW you must always put cv.wait(...) in a while loop!) <br/> 
 			<strong><a href="https://github.com/CNUClasses/410_start_threads_using_condition_var.git">Making all threads start at the same time using Condition Variables</a></strong> Also demonstrates the efficiency difference between condition variables and busy waiting on a global value (spinning)<br/>
 
 			<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer.git"> Simple producer consumer problem. Producer signals consumer.</a></strong>Single Producer, Single Consumer: Producer produces as fast as it can and notifies consumer, consumer consumes as fast as it can. Demoes effecient 1 way thread communication. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. Can have multiple consumers.<br>
@@ -347,6 +351,58 @@
 
 		</td>	
 	</tr>
+	<tr>
+		<td class="style_white "><em>13</em></td>
+		<td class="style_white ">
+			Please read Chapter 36: I/O devices<br>
+			<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/Semaphore.pdf"> Semaphores </a></strong>Think of semaphores as bouncers at a nightclub. There are a dedicated number of people that are allowed in the club at once. If the club is full no one is allowed to enter, but as soon as 
+			one person leaves another person might enter. It's simply a way to limit the number of consumers for a specific resource. For example, to limit the number of simultaneous calls to a database in an application.Or to limit the number of widgets produced before stopping and waiting for a consumer to catch up.  BTW a mutex can be represented as a semaphore that only lets one thread in the protected critical section at a time.<br>
+			<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chap5_dining_philosophers.pdf"> Using semaphores to solve dining philosophers problem </a></strong>handwritten lecture notes<br>
+			
+		</td>
+		<td class="style_white ">
+			<strong><a href="https://github.com/CNUClasses/code_review_files.git"> Code review files</a></strong> A illustrated collection of poor programming habbits and how to fix them.  See POORLY_CODED and FIXED versions of each file.<br>				
+
+<!--					<strong><a href="https://github.com/CNUClasses/WHATS_WRONG_WITH_THIS.git">Whats wrong with this code?</strong></a>Run it a few times, notice it locks up occasionally?  <br>
+					Why does this happen? How do you fix it?<br>
+					20 percentage points added to the project 4 grade of the first person who answers these 2 questions correctly!<br>
+					
+					BTW this code serves as a bad example thats only suitable for learning.  So	don't use any of it!<br><BR>
+-->
+				<!-- get rid of this project it does not work <strong><a href="https://github.com/CNUClasses/410_Producer_wait_for_all_consumers_ready_using_Semaphore.git"> Forcing a thread to wait until all other threads signal that they are ready using semaphores</a></strong> Semaphores for cordination example<br /> -->
+				<strong><a href="https://github.com/CNUClasses/410_Semaphore_ConditionVar_Mutex_Thread_Producer_Consumer.git"> Single Producer, single consumer solution using semaphores</a></strong> Semaphore example<br />
+				<!-- <strong><a href="https://github.com/CNUClasses/410_Semaphore_Dining_Philosophers.git">Dining philosophers solution using semaphores (requires below library project)</a></strong><br/> 
+				<strong><a href="https://github.com/CNUClasses/410_Semaphore_Lib.git">Semaphore class library (inherently useful stuff should be placed in a library)</a></strong><br/> -->
+	
+
+		</td>
+	</tr>
+<!-- 	<tr>
+		<td class="style_white "><em>13,14</em></td>
+		<td class="style_white ">
+				Please read Chapter 36: I/O devices
+				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/410_IO_1.pdf">Please read Chapter 36: I/O devices </a></strong> handwritten lecture notes<br>
+				<strong style="color: #cc0000">Test 2, 11/21/19.  Covers all multi-threaded material and projects 3,4. You may bring 1 sheet of paper (8.5"x11") with notes on both sides.</strong> <br> 
+		
+		</td>
+		<td class="style_white ">
+		</td>
+</tr>
+<tr>
+	<td class="style_white "><em>15</em></td>
+	<td class="style_white ">
+			Please read Chapter 37: Hard Disk Drives<br>
+			<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/37_Hard_Disk_Drives.pdf"> Chapter 37, Hard Disk Drives </a></strong><br><br>
+			Please read Chapter 39: Files and Directories<br> -->
+			<!-- Visual lining PCB, file descriptor tables and inode tables, more in class examples -->
+<!-- 						<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/39_File_and_Directories.pdf"> Chapter 39, Files and Directories </a></strong><br>	
+	</td>
+	<td class="style_white ">
+	</td>
+</tr>
+
+
+
 
 
 	</table>
