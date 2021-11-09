@@ -346,7 +346,7 @@
 		
 		Please read Chapter 30, Condition Variables<br><BR>
 			<strong style="color: #00cc00">What if you want thread 1 to wait until thread 2 says go? <br>
-				You cannot do this with just a mutex. Condition Variables solve this problem. </strong><br> 
+				You cannot do this with just a mutex (you can do it VERY ineffeciently with a busy wait though). Condition Variables solve this problem. </strong><br> 
 		<strong><a href="http://en.cppreference.com/w/cpp/thread/condition_variable"> Condition Variables, definition and sample code article</a></strong> <br>									
 
 			<strong><a href="https://baptiste-wicht.com/posts/2012/04/c11-concurrency-tutorial-advanced-locking-and-condition-variables.html"> Recursive Locks portion only</a></strong> This guy writes excellent C++ tutorials<br>
