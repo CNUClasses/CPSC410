@@ -347,7 +347,9 @@
 				-how to identify and protect critical sections in a multi threaded program<br>
 				-how to effeciently control the order in which threads execute (you need condition_variables)<br>
 				-how to maximize concurrency in a multithreaded program.  For examaple, given 2 unrelated critical sections, you can protect each with a different mutex, and thus have 2 different threads executing in each critical section at the same time.<br>
-				</strong><br>
+				-how to recognize and prevent deadlock<br>
+				-how to use mutexes in an exception prone environment (use a lock_guard that automatically unlocks)<br>
+			</strong><br>
 				 
 		
 		Please read Chapter 30, Condition Variables<br><BR>
@@ -373,7 +375,7 @@
 
 		</td>	
 	</tr>
-<!--	<tr>
+	<tr>
 		<td class="style_white "><em>13</em></td>
 		<td class="style_white ">
 			Please read Chapter 36: I/O devices<br>
@@ -383,7 +385,7 @@
 <!--			<strong><a href="https://drive.google.com/file/d/1eYU7pVXYaqA5lkN3ioSyN2r74ODiApKZ/view?usp=sharing">Semaphore example and Project 4 </a></strong> Synchronization and concurrency issues and solutions for the Semaphore project to the right, and Project 4 outline <br>
 		<br>
 			<strong style="color: #cc0000">Test 2, 4/22/21.  Includes everything from week 9 thru week 13 and projects 3 and 4 (all multi threading content). Emphasizes concepts in Projects 4 and 5.</strong> <br> 
-			<strong ><a style="color: #cc0000" href="https://github.com/CNUClasses/410_mid2_s21_SOLUTION.git">Test 2, 4/22/21 SOLUTION.</a></strong> <br> 
+			<strong ><a style="color: #cc0000" href="https://github.com/CNUClasses/410_mid2_s21_SOLUTION.git">Test 2, 4/22/21 SOLUTION.</a></strong> <br> -->
 			
 			
 		</td>
@@ -391,16 +393,16 @@
 			<!-- <strong><a href="https://github.com/CNUClasses/code_review_files.git"> Code review files</a></strong> A illustrated collection of poor programming habbits and how to fix them.  See POORLY_CODED and FIXED versions of each file.<br>				 -->
 
 				<!-- get rid of this project it does not work <strong><a href="https://github.com/CNUClasses/410_Producer_wait_for_all_consumers_ready_using_Semaphore.git"> Forcing a thread to wait until all other threads signal that they are ready using semaphores</a></strong> Semaphores for cordination example<br /> -->
-<!--				<strong><a href="https://github.com/CNUClasses/410_Semaphore_ConditionVar_Mutex_Thread_Producer_Consumer.git"> Single Producer, single consumer solution using semaphores</a></strong> Semaphore example<br />
+				<strong><a href="https://github.com/CNUClasses/410_Semaphore_ConditionVar_Mutex_Thread_Producer_Consumer.git"> Single Producer, single consumer solution using semaphores</a></strong> Semaphore example<br />
 				<strong><a href="https://github.com/CNUClasses/WHATS_WRONG_WITH_THIS.git">Whats wrong with this code?</strong></a>Run it a few times, notice it locks up occasionally? BTW this code serves as a bad example thats only suitable for learning.  So	don't use any of it!  <br>
 	
-				<!-- <strong><a href="https://github.com/CNUClasses/410_Semaphore_Dining_Philosophers.git">Dining philosophers solution using semaphores (requires below library project)</a></strong><br/> 
-				<strong><a href="https://github.com/CNUClasses/410_Semaphore_Lib.git">Semaphore class library (inherently useful stuff should be placed in a library)</a></strong><br/> -->
+				<strong><a href="https://github.com/CNUClasses/410_Semaphore_Dining_Philosophers.git">Dining philosophers solution using semaphores (requires below library project)</a></strong><br/> 
+				<strong><a href="https://github.com/CNUClasses/410_Semaphore_Lib.git">Semaphore class library (inherently useful stuff should be placed in a library)</a></strong><br/>
 	
 
-<!--		</td>
+		</td>
 	</tr>
-	<tr>
+<!--	<tr>
 		<td class="style_white "><em>14,15</em></td>
 		<td class="style_white ">
 				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/36.IO_Devices.pdf">I/O devices </a></strong> Introduction<br><br>
