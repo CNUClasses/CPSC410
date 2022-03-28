@@ -294,10 +294,31 @@
 		</td>
 		
 	</tr>-->
-<!--	<tr>
-		<td class="style_white "><em>10,11</em></td>
-		<td class="style_white ">		
+	<tr>
+		<td class="style_white "><em>11</em></td>
+		<td class="style_white ">	
+			<strong style="color: #cc0000">Test 2, 4/19/22.  Includes everything from week 8 (multi-level page tables) thru week 13 and projects 3 and 4 (all multi threading content). Emphasizes concepts in Projects 4 and 5.</strong> <br> 
+				
+			<strong>External content</strong><br>	
 				Please read Chapter 28: Locks<BR>
+				Please read Chapter 32, Common Concurrency Problems - pay attention to Deadlock and the section entitled 'Conditions for Deadlock' (see below)<br>
+				Four conditions need to hold for a deadlock to occur:
+				<ul>
+						<li>Mutual exclusion: Threads claim exclusive control of resources 
+						that they require (e.g., a thread grabs a lock).</li>
+						<li>Hold-and-wait: Threads hold resources allocated to them (e.g., locks 
+						that they have already acquired) while waiting for additional resources 
+						(e.g., locks that they wish to acquire).</li>
+						<li>No preemption: Resources (e.g., locks) cannot be forcibly removed 
+						from threads that are holding them.</li>
+						<li>Circular wait: There exists a circular chain of threads such that each
+						thread holds one or more resources (e.g., locks) that are being 
+						requested by the next thread in the chain.</li>
+				</ul>
+				<br><strong>Deadlock Rule of thumb:</strong> If you are using 2 or more synchronization objects, then you should always aquire them in the same order.  If you break this rule and some threads aquire in different order then your code is prone to deadlock.<br>
+
+				
+			<strong>Lectures</strong><br>
 					Mutexes<br>
 					<ul>
 						<li>Mutexes are almost certainly going to be global variables (they will NOT be local variables)</li>
@@ -306,27 +327,11 @@
 						<li>To use: Identify minimal critical sections, then wrap critical section with an auto unlocking lock_guard</li>
 					</ul>
 
-						<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/mutex_intro.pdf"> Mutex </a></strong> Lecture notes.<br>						 
+					<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/mutex_intro.pdf"> Mutex </a></strong> Lecture notes.<br>						 
 						
-						Please read Chapter 32, Common Concurrency Problems - pay attention to Deadlock and the section entitled 'Conditions for Deadlock' (see below)<br>
-						Four conditions need to hold for a deadlock to occur:
-						<ul>
-							   <li>Mutual exclusion: Threads claim exclusive control of resources 
-							  that they require (e.g., a thread grabs a lock).</li>
-							  <li>Hold-and-wait: Threads hold resources allocated to them (e.g., locks 
-							  that they have already acquired) while waiting for additional resources 
-							  (e.g., locks that they wish to acquire).</li>
-							  <li>No preemption: Resources (e.g., locks) cannot be forcibly removed 
-							  from threads that are holding them.</li>
-							  <li>Circular wait: There exists a circular chain of threads such that each
-							  thread holds one or more resources (e.g., locks) that are being 
-							  requested by the next thread in the chain.</li>
-						</ul>
-						<br><strong>Deadlock Rule of thumb:</strong> If you are using 2 or more synchronization objects, then you should always aquire them in the same order.  If you break this rule and some threads aquire in different order then your code is prone to deadlock.<br>
-		
-						<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/deadlock_intro.pdf"> Deadlock </a></strong> Lecture notes.<br>
+					<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/deadlock_intro.pdf"> Deadlock </a></strong> Lecture notes.<br>
 						<!-- ARTICLE IS NO LONGER PUBLICLY AVAILABLE<strong><a href="http://www.drdobbs.com/tools/avoiding-classic-threading-problems/231000499"> Avoiding Classic Threading Problems</a></strong> ADVANCED DISCUSSION- Excellent article, dont worry about openMP and Intel Thread Checker<br> -->
-<!--												<td class="style_white ">
+			<td class="style_white ">
 			<strong><a href="https://github.com/CNUClasses/410_stop_threads.git"> Stopping a thread Cleanly</a></strong><br> 
 			<strong><a href="https://github.com/CNUClasses/spinlock.git"> A spinlock</a></strong> Do not use! Works but spikes CPU usage for all threads waiting for the lock!  <br />
 			<strong><a href="https://github.com/CNUClasses/mutex_thread.git"> Mutexes to synchronize threads</a></strong> Using a mutex to synchronize critical sections (as in multiple lines of code).  <br />
@@ -345,7 +350,7 @@
 				added a Theatre to ticket agent
 				at their request put the mutex to protect entry and exit from theatre outside class, showed how that led to messy code and hard to use class
 			    showed where deadlock can occur in theatre if locking same mutex twice-->
-<!--			<strong ><a href="https://github.com/CNUClasses/12_thread_ticket_agent.git" style="color: #00cc00"> Thread ticket agent - in class lab</a></strong> Sequential verses concurrent solution<br> 
+			<strong ><a href="https://github.com/CNUClasses/12_thread_ticket_agent.git" style="color: #00cc00"> Thread ticket agent - in class lab</a></strong> Sequential verses concurrent solution<br> 
 			<strong><a href="https://github.com/CNUClasses/mutex_lock_guard_sleep_for_yield.git">mutex_lock_guard_sleep_for_yield    </a></strong> Using a lock_guard to autounlock a mutex once the guard goes out of scope.  Also how to yield a threads timeslice or sleep the amount of time defined by std::chrono..<br />	
 			<strong><a href="https://github.com/CNUClasses/410_recursive_mutex.git">Recursive_mutex    </a></strong> A locking object that can be recursively locked (as long as you have 1 unlock() for every lock()).  This added functionality typically makes it harder to keep track of locked regions when designing your application. <br />	
 		
@@ -354,7 +359,7 @@
 
 		</td>	
 	</tr>
-
+<!--
 	<tr>
 		<td class="style_white "><em>12</em></td>
 		<td class="style_white ">
