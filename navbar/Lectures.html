@@ -297,7 +297,16 @@
 	<tr>
 		<td class="style_white "><em>11</em></td>
 		<td class="style_white ">	
-			<strong style="color: #cc0000">Test 2, 4/19/22.  Includes everything from week 8 (multi-level page tables) thru week 13 and projects 3 and 4 (all multi threading content). </strong> <br> 
+			<strong style="color: #cc0000">Test 2, 4/19/22.  Includes everything from week 8 (multi-level page tables) thru week 13 and projects 3 and 4 (all multi threading content). 
+				The test will be given to you on paper. <br>
+				You may bring 1 sheet of paper with notes on both sides. No other resources are allowed. <br> 
+				You should know;<br>
+				-how to identify and protect critical sections in a multi threaded program<br>
+				-how to effeciently control the order in which threads execute (you need condition_variables)<br>
+				-how to maximize concurrency in a multithreaded program.  For examaple, given 2 unrelated critical sections, you can protect each with a different mutex, and thus have 2 different threads executing in each critical section at the same time.<br>
+				-how to recognize and prevent deadlock<br>
+				-how to use mutexes in an exception prone environment (use a lock_guard that automatically unlocks)<br>
+			</strong> <br> 
 				
 			<strong>External content</strong><br>	
 				Please read Chapter 28: Locks<BR>
@@ -329,7 +338,6 @@
 
 					<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/mutex_intro.pdf"> Mutex </a></strong> Lecture notes.<br>						 
 						
-					<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/deadlock_intro.pdf"> Deadlock </a></strong> Lecture notes.<br>
 						<!-- ARTICLE IS NO LONGER PUBLICLY AVAILABLE<strong><a href="http://www.drdobbs.com/tools/avoiding-classic-threading-problems/231000499"> Avoiding Classic Threading Problems</a></strong> ADVANCED DISCUSSION- Excellent article, dont worry about openMP and Intel Thread Checker<br> -->
 			<td class="style_white ">
 			<strong><a href="https://github.com/CNUClasses/410_stop_threads.git"> Stopping a thread Cleanly</a></strong><br> 
@@ -354,16 +362,14 @@
 			<strong><a href="https://github.com/CNUClasses/mutex_lock_guard_sleep_for_yield.git">mutex_lock_guard_sleep_for_yield    </a></strong> Using a lock_guard to autounlock a mutex once the guard goes out of scope.  Also how to yield a threads timeslice or sleep the amount of time defined by std::chrono..<br />	
 			<strong><a href="https://github.com/CNUClasses/410_recursive_mutex.git">Recursive_mutex    </a></strong> A locking object that can be recursively locked (as long as you have 1 unlock() for every lock()).  This added functionality typically makes it harder to keep track of locked regions when designing your application. <br />	
 		
-			<strong><a href="https://github.com/CNUClasses/simple_deadlock.git"> Simple Deadlock examples</a></strong> Very simple examples of how deadlock can occur<br /> 
-			<strong><a href="https://github.com/CNUClasses/8_Deadlock.git"> A slightly more complex deadlock example</a></strong> <br /> <br>	
 
 		</td>	
 	</tr>
-<!--
+
 	<tr>
-		<td class="style_white "><em>12</em></td>
+		<td class="style_white "><em>12,13</em></td>
 		<td class="style_white ">
-			<strong style="color: #cc0000">Test, 11/18/21.  Emphasizes everything from weeks 8 thru 13. And project 3. <BR>
+			<!--<strong style="color: #cc0000">Test, 11/18/21.  Emphasizes everything from weeks 8 thru 13. And project 3. <BR>
 				The test will be given to you on paper. <br>
 				You may bring 1 sheet of paper with notes on both sides. No other resources are allowed. <br> 
 				You should know;<br>
@@ -372,21 +378,26 @@
 				-how to maximize concurrency in a multithreaded program.  For examaple, given 2 unrelated critical sections, you can protect each with a different mutex, and thus have 2 different threads executing in each critical section at the same time.<br>
 				-how to recognize and prevent deadlock<br>
 				-how to use mutexes in an exception prone environment (use a lock_guard that automatically unlocks)<br>
-			</strong><br>
+			</strong><br>-->
 				 
-		
+		<strong>External content</strong><br>	
 		Please read Chapter 30, Condition Variables<br><BR>
 			<strong style="color: #00cc00">What if you want thread 1 to wait until thread 2 says go? <br>
 				You cannot do this with just a mutex (you can do it VERY ineffeciently with a busy wait though). Condition Variables solve this problem. </strong><br> 
 		<strong><a href="http://en.cppreference.com/w/cpp/thread/condition_variable"> Condition Variables, definition and sample code article</a></strong> <br>									
 
 			<strong><a href="https://baptiste-wicht.com/posts/2012/04/c11-concurrency-tutorial-advanced-locking-and-condition-variables.html"> Recursive Locks portion only</a></strong> This guy writes excellent C++ tutorials<br>
+			<br><strong>Lectures</strong><br>
+			<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/deadlock_intro.pdf"> Deadlock </a></strong> Lecture notes.<br>
 			<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/Condition_Variables.pdf"> Condition Variables</a></strong> Demonstration slides<br>	
 			<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/producer_consumer.pdf"> Producer Consumer, A common programming task</a></strong> Outline and solution flow.
 						
 			<!-- what happens when notify_one called and not notify all -->
-<!--		</td>
+		</td>
 		<td class="style_white ">	
+			<strong><a href="https://github.com/CNUClasses/simple_deadlock.git"> Simple Deadlock examples</a></strong> Very simple examples of how deadlock can occur<br /> 
+			<strong><a href="https://github.com/CNUClasses/8_Deadlock.git"> A slightly more complex deadlock example</a></strong> <br /> <br>	
+
 			<strong><a href="https://github.com/CNUClasses/Simple_Condition_Variable.git">Simple Condition Variables</a></strong>Ordering thread operations.  Signaling between threads using a mutex a condition variable and a unique_lock<br/> 				
 			<strong><a href="https://github.com/CNUClasses/410_ConditionVar_Mutex.git">Simple Condition Variables</a></strong>>What happens when you do not put cv.wait(...) in a while loop. (BTW you must always put cv.wait(...) in a while loop!) <br/> 
 			<strong><a href="https://github.com/CNUClasses/410_start_threads_using_condition_var.git">Making all threads start at the same time using Condition Variables</a></strong> Also demonstrates the efficiency difference between condition variables and busy waiting on a global value (spinning)<br/>
@@ -398,7 +409,7 @@
 
 		</td>	
 	</tr>
-	<tr>
+<!--	<tr>
 		<td class="style_white "><em>13,14</em></td>
 		<td class="style_white ">
 			Please read Chapter 36: I/O devices<br>
