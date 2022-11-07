@@ -340,24 +340,24 @@
 		</td>	
 	</tr>
 
-<!--	<tr>
+	<tr>
 		<td class="style_white "><em>12,13</em></td>
 		<td class="style_white ">
-			<!--<strong style="color: #cc0000">Test, 11/18/21.  Emphasizes everything from weeks 8 thru 13. And project 3. <BR>
+			<strong style="color: #cc0000">Test, 11/22/22.  Emphasizes everything from weeks 9 thru 13. And project 3. <BR>
 				The test will be given to you on paper. <br>
 				You may bring 1 sheet of paper with notes on both sides. No other resources are allowed. <br> 
 				You should know;<br>
 				-how to identify and protect critical sections in a multi threaded program<br>
 				-how to effeciently control the order in which threads execute (you need condition_variables)<br>
-				-how to maximize concurrency in a multithreaded program.  For examaple, given 2 unrelated critical sections, you can protect each with a different mutex, and thus have 2 different threads executing in each critical section at the same time.<br>
+				-how to maximize concurrency in a multithreaded program.  For examaple, given 2 unrelated critical sections, you can protect each with a different mutex, and thus have a different thread executing in each critical section at the same time.<br>
 				-how to recognize and prevent deadlock<br>
 				-how to use mutexes in an exception prone environment (use a lock_guard that automatically unlocks)<br>
-			</strong><br>-->
+			</strong><br>
 				 
-<!--		<strong>External content</strong><br>	
+		<strong>External content</strong><br>	
 		Please read Chapter 30, Condition Variables<br><BR>
 			<strong style="color: #00cc00">What if you want thread 1 to wait until thread 2 says go? <br>
-				You cannot do this with just a mutex (you can do it VERY ineffeciently with a busy wait though). Condition Variables solve this problem. </strong><br> 
+				You cannot do this with just a mutex (you can do it ineffeciently with a busy wait though). Condition Variables solve this problem. </strong><br> 
 		<strong><a href="http://en.cppreference.com/w/cpp/thread/condition_variable"> Condition Variables, definition and sample code article</a></strong> <br>									
 
 			<strong><a href="https://baptiste-wicht.com/posts/2012/04/c11-concurrency-tutorial-advanced-locking-and-condition-variables.html"> Recursive Locks portion only</a></strong> This guy writes excellent C++ tutorials<br>
@@ -369,7 +369,7 @@
 			BTW a mutex can be represented as a semaphore that only lets one thread in the protected critical section at a time.<br>
 					
 			<!-- what happens when notify_one called and not notify all -->
-<!--		</td>
+		</td>
 		<td class="style_white ">	
 			
 			<strong><a href="https://github.com/CNUClasses/Simple_Condition_Variable.git">Simple Condition Variables</a></strong>Ordering thread operations.  Signaling between threads using a mutex a condition variable and a unique_lock<br/> 				
@@ -383,7 +383,7 @@
 			<br><strong><a href="https://github.com/CNUClasses/410_Semaphore_ConditionVar_Mutex_Thread_Producer_Consumer.git"> Single Producer, single consumer solution using semaphores</a></strong> Semaphore example<br />
 
 		</td>	
-	</tr>
+<!--	</tr>
 	<tr>
 		<td class="style_white "><em>14</em></td>
 		<td class="style_white ">
