@@ -367,14 +367,15 @@
 			<br><strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/Semaphore.pdf"> Semaphores </a></strong>Think of semaphores as bouncers at a nightclub. There are a dedicated number of people that are allowed in the club at once. If the club is full no one is allowed to enter, but as soon as 
 			one person leaves another person might enter. It's simply a way to limit the number of consumers for a specific resource. For example, to limit the number of simultaneous calls to a database in an application.Or to limit the number of widgets produced before stopping and waiting for a consumer to catch up.  
 			BTW a mutex can be represented as a semaphore that only lets one thread in the protected critical section at a time.<br>
-					
+			<br><mark> C++ tutoring available in Hunter Creech Lab, Monday and Wednesday, 6pm-8pm by Prof Connolly</mark><br>		
 			<!-- what happens when notify_one called and not notify all -->
 		</td>
 		<td class="style_white ">	
 			
 			<strong><a href="https://github.com/CNUClasses/Simple_Condition_Variable.git">Simple Condition Variables</a></strong>Ordering thread operations.  Signaling between threads using a mutex a condition variable and a unique_lock<br/> 				
 			<strong><a href="https://github.com/CNUClasses/410_ConditionVar_Mutex.git">Simple Condition Variables</a></strong>>What happens when you do not put cv.wait(...) in a while loop. (BTW you must always put cv.wait(...) in a while loop!) <br/> 
-			<strong><a href="https://github.com/CNUClasses/410_start_threads_using_condition_var.git">Making all threads start at the same time using Condition Variables</a></strong> Also demonstrates the efficiency difference between condition variables and busy waiting on a global value (spinning)<br/>
+			<strong><a href="https://github.com/CNUClasses/410_start_threads_using_condition_var.git">Making all threads start at the same time using Condition Variables</a></strong> 
+			All threads wait but there is still a problem with synchronizing the cout and i<br/>
 
 			<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer.git"> Simple producer consumer problem. Producer signals consumer.</a></strong>Single Producer, Single Consumer: Producer produces as fast as it can and notifies consumer, consumer consumes as fast as it can. Demoes effecient 1 way thread communication. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. Can have multiple consumers.<br>
 			<strong><a href="https://github.com/CNUClasses/410_Producer_many_consumers.git"> Producer consumer problem using mutex and condition variables</a></strong> Single Producer, Multiple Consumers <br />
