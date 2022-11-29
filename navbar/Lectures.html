@@ -364,12 +364,8 @@
 			<br><strong>Lectures</strong><br>
 			<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/Condition_Variables.pdf"> Condition Variables</a></strong> Demonstration slides<br>	
 			<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/producer_consumer.pdf"> Producer Consumer, A common programming task</a></strong> Outline and solution flow.
-			<br><strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/Semaphore.pdf"> Semaphores </a></strong>Think of semaphores as bouncers at a nightclub. There are a dedicated number of people that are allowed in the club at once. If the club is full no one is allowed to enter, but as soon as 
-			one person leaves another person might enter. It's simply a way to limit the number of consumers for a specific resource. For example, to limit the number of simultaneous calls to a database in an application.Or to limit the number of widgets produced before stopping and waiting for a consumer to catch up.  
-			BTW a mutex can be represented as a semaphore that only lets one thread in the protected critical section at a time.<br>
 			<br><mark> C++ tutoring available in Hunter Creech Lab, Monday and Wednesday, 6pm-8pm by Prof Connolly</mark><br>	
-					<!-- skipped fall 21 <strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chap5_dining_philosophers.pdf"> Using semaphores to solve dining philosophers problem </a></strong>handwritten lecture notes<br> -->
-	
+					
 			<!-- what happens when notify_one called and not notify all -->
 		</td>
 		<td class="style_white ">	
@@ -383,7 +379,6 @@
 			<strong><a href="https://github.com/CNUClasses/410_Producer_many_consumers.git"> Producer consumer problem using mutex and condition variables</a></strong> Single Producer, Multiple Consumers <br />
 			
 			<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer_Back_And_Forth.git">Complex producer consumer problem, Producer signals consumer and vice versa</a></strong>Producer produces one then notifies consumer, consumer consumes one then notifies producer. Demoes effecient 2 way thread communications. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. <br>				
-			<br><strong><a href="https://github.com/CNUClasses/410_Semaphore_ConditionVar_Mutex_Thread_Producer_Consumer.git"> Single Producer, single consumer solution using semaphores</a></strong> Semaphore example<br />
 
 		</td>	
 	</tr>
@@ -413,8 +408,18 @@
 			There will be be a multithreaded problem to solve that requires some combonation of threads, mutexes, condition variables and semaphores<br>
 			There will be at least 1 question on deadlock<br>
 			THATS IT FOR THE HINTS, GOOD LUCK!<BR></strong> <br>
+				<br><strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/Semaphore.pdf"> Semaphores </a></strong>Think of semaphores as bouncers at a nightclub. There are a dedicated number of people that are allowed in the club at once. If the club is full no one is allowed to enter, but as soon as 
+				one person leaves another person might enter. It's simply a way to limit the number of consumers for a specific resource. For example, to limit the number of simultaneous calls to a database in an application.Or to limit the number of widgets produced before stopping and waiting for a consumer to catch up.  
+				BTW a mutex can be represented as a semaphore that only lets one thread in the protected critical section at a time.<br>
+	
+				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chap5_dining_philosophers.pdf"> Using semaphores to solve dining philosophers problem </a></strong>handwritten lecture notes<br>
+	
 		</td>
 		<td class="style_white ">	
+			<br><strong><a href="https://github.com/CNUClasses/410_Semaphore_ConditionVar_Mutex_Thread_Producer_Consumer.git"> Single Producer, single consumer solution using semaphores</a></strong> Semaphore example<br />
+			<strong><a href="https://github.com/CNUClasses/410_Semaphore_Dining_Philosophers.git">Dining philosophers solution using semaphores (requires below library project)</a></strong><br/> 
+			<strong><a href="https://github.com/CNUClasses/410_Semaphore_Lib.git">Semaphore class library (inherently useful stuff should be placed in a library)</a></strong><br/>
+
 			</td>
 		</tr>
 
@@ -435,8 +440,6 @@
 
 				<!-- <strong><a href="https://github.com/CNUClasses/WHATS_WRONG_WITH_THIS.git">Whats wrong with this code?</strong></a>Run it a few times, notice it locks up occasionally? BTW this code serves as a bad example thats only suitable for learning.  So	don't use any of it!  <br> -->
 	
-				<!-- skipped fall 21 <strong><a href="https://github.com/CNUClasses/410_Semaphore_Dining_Philosophers.git">Dining philosophers solution using semaphores (requires below library project)</a></strong><br/> 
-				<strong><a href="https://github.com/CNUClasses/410_Semaphore_Lib.git">Semaphore class library (inherently useful stuff should be placed in a library)</a></strong><br/>
 	 -->
 
 <!--		</td>
