@@ -322,6 +322,39 @@
 	
 			</td>	
 		</tr>
+		<tr>
+			<td class="style_white "><em>12,13</em></td>
+			<td class="style_white ">
+			
+					 
+			<strong>External content</strong><br>	
+			Please read Chapter 30, Condition Variables<br><BR>
+				<strong style="color: #00cc00">What if you want thread 1 to wait until thread 2 says go? <br>
+					You cannot do this with just a mutex (you can do it ineffeciently with a busy wait though). Condition Variables solve this problem. </strong><br> 
+			<strong><a href="http://en.cppreference.com/w/cpp/thread/condition_variable"> Condition Variables, definition and sample code article</a></strong> <br>									
+	
+				<strong><a href="https://baptiste-wicht.com/posts/2012/04/c11-concurrency-tutorial-advanced-locking-and-condition-variables.html"> Recursive Locks portion only</a></strong> This guy writes excellent C++ tutorials<br>
+				<br><strong>Lectures</strong><br>
+				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/Condition_Variables.pdf"> Condition Variables</a></strong> Demonstration slides<br>	
+				<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/producer_consumer.pdf"> Producer Consumer, A common programming task</a></strong> Outline and solution flow.
+				<br><mark> C++ tutoring available in Hunter Creech Lab, Monday and Wednesday, 6pm-8pm by Prof Connolly</mark><br>	
+						
+				<!-- what happens when notify_one called and not notify all -->
+			</td>
+			<td class="style_white ">	
+				
+				<strong><a href="https://github.com/CNUClasses/Simple_Condition_Variable.git">Simple Condition Variables</a></strong>Ordering thread operations.  Signaling between threads using a mutex a condition variable and a unique_lock<br/> 				
+				<strong><a href="https://github.com/CNUClasses/410_ConditionVar_Mutex.git">Simple Condition Variables</a></strong>>What happens when you do not put cv.wait(...) in a while loop. (BTW you must always put cv.wait(...) in a while loop!) <br/> 
+				<strong><a href="https://github.com/CNUClasses/410_start_threads_using_condition_var.git">Making all threads start at the same time using Condition Variables</a></strong> 
+				All threads wait but there is still a problem with synchronizing the cout and i<br/>
+	
+				<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer.git"> Simple producer consumer problem. Producer signals consumer.</a></strong>Single Producer, Single Consumer: Producer produces as fast as it can and notifies consumer, consumer consumes as fast as it can. Demoes effecient 1 way thread communication. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. Can have multiple consumers.<br>
+				<strong><a href="https://github.com/CNUClasses/410_Producer_many_consumers.git"> Producer consumer problem using mutex and condition variables</a></strong> Single Producer, Multiple Consumers <br />
+				
+				<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer_Back_And_Forth.git">Complex producer consumer problem, Producer signals consumer and vice versa</a></strong>Producer produces one then notifies consumer, consumer consumes one then notifies producer. Demoes effecient 2 way thread communications. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. <br>				
+	
+			</td>	
+		</tr>
 	
 	</table>
     </section> 
