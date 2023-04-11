@@ -353,7 +353,49 @@
 				<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer_Back_And_Forth.git">Complex producer consumer problem, Producer signals consumer and vice versa</a></strong>Producer produces one then notifies consumer, consumer consumes one then notifies producer. Demoes effecient 2 way thread communications. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. <br>				
 	
 			</td>	
-		</tr>
+		</tr>	<tr>
+			<td class="style_white "><em>13,14</em></td>
+			<td class="style_white ">
+				<!-- <strong style="color: #cc0000">Midterm 1 and Midterm 2 solutions on scholar under 'tests' in sidebar</strong><br><br> -->
+	
+				<strong style="color: #cc0000">Final Exam Schedule<BR>
+				9:30-10:45     class- Friday April 28, 8am-10:30am (2.5 hours long)<br>
+				11:00-12:15  class- Tuesday  May 2, 11am-1:30pm (2.5 hours long)<br>
+				<!-- 8:00-10:30am, Thursday, December 8<br> -->
+				
+				<br>
+				Similar format to Midterms<br>
+				The test will be given to you on paper. <br>
+				You may bring 5 sheets of paper with notes on both sides. No other resources are allowed.<br> 
+				<br>
+				It's Comprehensive:<br>
+				All course material is fair game<br><br>
+				Topics:<br>
+				Difference between cooperative and pre emptive multitasking OS's<br>
+				Process scheduling, scheduling algorithms, metrics<br>
+				Virtual memory, simple and multilevel page tables, TLB's (there will be a multilevel page table problem)<br>
+				<!-- Policy (clock, FIFO, Optimal, Least Recently used, there will be at least one of these)<br> -->
+	
+				There will be be a multithreaded problem to solve that requires some combination of threads, mutexes, condition variables and semaphores<br>
+				There will probably be a question on deadlock<br>
+				THATS IT FOR THE HINTS, GOOD LUCK!<BR></strong> <br>
+					<br><strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/Semaphore.pdf"> Semaphores </a></strong>Think of semaphores as bouncers at a nightclub. There are a dedicated number of people that are allowed in the club at once. If the club is full no one is allowed to enter, but as soon as 
+					one person leaves another person might enter. It's simply a way to limit the number of consumers for a specific resource. For example, to limit the number of simultaneous calls to a database in an application.Or to limit the number of widgets produced before stopping and waiting for a consumer to catch up.  
+					BTW a mutex can be represented as a semaphore that only lets one thread in the protected critical section at a time.<br>
+		
+					<strong><a href="https://github.com/CNUClasses/CPSC410/blob/master/content/Lectures/chap5_dining_philosophers.pdf"> Using semaphores to solve dining philosophers problem </a></strong>handwritten lecture notes<br>
+		
+			</td>
+			<td class="style_white ">	
+				<br><strong><a href="https://github.com/CNUClasses/410_Semaphore_ConditionVar_Mutex_Thread_Producer_Consumer.git"> Single Producer, single consumer solution using semaphores</a></strong> Semaphore example<br />
+				<strong><a href="https://github.com/CNUClasses/410_Semaphore_Dining_Philosophers.git">Dining philosophers solution using semaphores (requires below library project)</a></strong><br/> 
+				<strong><a href="https://github.com/CNUClasses/410_Semaphore_Lib.git">Semaphore class library (inherently useful stuff should be placed in a library)</a></strong><br/>
+	
+				</td>
+			</tr>
+	
+	
+
 	
 	</table>
     </section> 
