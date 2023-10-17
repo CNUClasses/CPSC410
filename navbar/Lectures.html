@@ -191,7 +191,7 @@
 				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/9_TLB.pdf">Translation Lookaside Buffer (TLB)</a></strong><br>  		
 				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/10_SmallerTables.pdf">Reducing the size of page tables</a></strong><br>  			
 				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/PagingandMultilevelpagetableexamples.pdf"> Examples: Multilevel Page tables </a></strong>  How to drastically reduce the size of page tables ( essential especially for 64 bit systems)<br>
-				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/11_MemPolicy.pdf"> Policy</a></strong>  Using the hard disk as virtual RAM.  Page replacement algorithms.<BR><br>
+				<!-- Not for fall 23 <strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/11_MemPolicy.pdf"> Policy</a></strong>  Using the hard disk as virtual RAM.  Page replacement algorithms.<BR><br> -->
 	
 				
 				Please read Chapter 21: Beyond Physical Memory: Mechanisms<br>
@@ -202,7 +202,7 @@
 			<td class="style_white ">			
 			</td>
 		</tr>
-	<!--	<tr>
+		<tr>
 			<td class="style_white "><em>9,10</em></td>
 			
 			<td class="style_white ">
@@ -211,7 +211,7 @@
 				Please read Chapter 26: Concurrency: An Introduction<BR>
 				<strong><a href="https://eli.thegreenplace.net/2016/c11-threads-affinity-and-hyperthreading/">(Advanced) C++11 threads, affinity and hyperthreading</a>Excellent! relates C++ threads to processor hardware</strong> <br><br>
 		<!--Threads, using and debugging in a C++ project. Timing of thread launch and its effects. The non deterministic nature of a multithreaded program. -->
-<!--		<strong><a href="http://www.cplusplus.com/reference/atomic/"> Atomics </a></strong> Useful BUT can only synchronize 1 C++ operation at a time.<br>
+		<strong><a href="http://www.cplusplus.com/reference/atomic/"> Atomics </a></strong> Useful BUT can only synchronize 1 C++ operation at a time.<br>
 		
 				<strong style="color: #cc0000">NOTE: Projects that use threads require at least C++ 11 support.<br>
 				  To enable it, click on <br>the project name->Properties-> 
@@ -239,7 +239,7 @@
 					<!-- <strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/chapter_5_opencv_camera_bridge_view_HARD_race_condition_find_it.pdf"> A real world example race condition and critical section that is difficult to see</a></strong>  <br> -->
 	
 	
-<!--		</td>
+		</td>
 		<td class="style_white ">
 			<strong><a href="https://github.com/CNUClasses/thread_simple.git"> Single thread demo</a></strong> Use disassembly view to see that each c++ statement is equivelent to multiple assembly instructions.  An interrupt can be serviced after any assembly instruction, which may be in the middle of a C++ instruction<br />
 			<strong><a href="https://github.com/CNUClasses/thread_problem_atomic_solution.git"> Problems that threads can cause</a></strong> Running several threads, each reading and writing a global will cause unpredictable results. Demo using an atomic variable for a simple (but not generalizable to blocks of code>1 line) solution<br />
@@ -247,7 +247,7 @@
 	
 		</td>
 		</tr>
-		<tr>
+<!--		<tr>
 			<td class="style_white "><em>11</em></td>
 			<td class="style_white ">	
 				<strong style="color: #cc0000">Test 2, 4/18/23.  Includes everything from week 9 thru week 13 and projects 3 and 4 (all multi threading content). 
