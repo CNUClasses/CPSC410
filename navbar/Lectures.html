@@ -203,7 +203,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td class="style_white "><em>9,10</em></td>
+			<td class="style_white "><em>8,9</em></td>
 			
 			<td class="style_white ">
 						
@@ -242,15 +242,25 @@
 		</td>
 		<td class="style_white ">
 			<strong><a href="https://github.com/CNUClasses/thread_simple.git"> Single thread demo</a></strong> Use disassembly view to see that each c++ statement is equivelent to multiple assembly instructions.  An interrupt can be serviced after any assembly instruction, which may be in the middle of a C++ instruction<br />
-			<!-- change this to have the above code but solution with atomics <strong><a href="https://github.com/CNUClasses/thread_problem_atomic_solution.git"> Problems that threads can cause</a></strong> Running several threads, each reading and writing a global will cause unpredictable results. Demo using an atomic variable for a simple (but not generalizable to blocks of code>1 line) solution<br /> -->
+			<strong><a href="https://github.com/CNUClasses/thread_problem_atomic_solution.git"> Problems that threads can cause</a></strong> Running several threads, each reading and writing a global will cause unpredictable results. Demo using an atomic variable for a simple (but not generalizable to blocks of code>1 line) solution<br />
 			<strong><a href="https://github.com/CNUClasses/Thread_Race_Condition.git"> Thread Race Condition</a></strong><br />
 	
 		</td>
 		</tr>
-<!--		<tr>
-			<td class="style_white "><em>11</em></td>
+		<tr>
+			<td class="style_white "><em>10</em></td>
 			<td class="style_white ">	
-				<strong style="color: #cc0000">Test 2, 4/18/23.  Includes everything from week 9 thru week 13 and projects 3 and 4 (all multi threading content). 
+				<!-- <strong style="color: #cc0000">Test 2, 11/14/23.  Includes everything from week 6 thru week 10 and project 3. 
+					The test will be given to you on paper. <br>
+					You may bring 1 sheet of paper with notes on both sides. No other resources are allowed. <br> 
+					You should know;<br>
+					-multilevel page tables<br>
+					-how to identify and protect critical sections in a multi threaded program<br>
+					-how to maximize concurrency in a multithreaded program.  For examaple, given 2 unrelated critical sections, you can protect each with a different mutex, and thus have 2 different threads executing in each critical section at the same time.<br>
+					-how to recognize and prevent deadlock<br>
+					-how to use mutexes in an exception prone environment (use a lock_guard that automatically unlocks)<br>
+				</strong> <br>  -->
+				<!-- <strong style="color: #cc0000">Test 2, 11/14/23.  Includes everything from week 6 thru week 10 and projects 3 and 4 (all multi threading content). 
 					The test will be given to you on paper. <br>
 					You may bring 1 sheet of paper with notes on both sides. No other resources are allowed. <br> 
 					You should know;<br>
@@ -259,7 +269,7 @@
 					-how to maximize concurrency in a multithreaded program.  For examaple, given 2 unrelated critical sections, you can protect each with a different mutex, and thus have 2 different threads executing in each critical section at the same time.<br>
 					-how to recognize and prevent deadlock<br>
 					-how to use mutexes in an exception prone environment (use a lock_guard that automatically unlocks)<br>
-				</strong> <br> 
+				</strong> <br>  -->
 					
 				<strong>External content</strong><br>	
 					Please read Chapter 28: Locks<BR>
@@ -296,10 +306,10 @@
 						<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/deadlock_intro.pdf"> Deadlock </a></strong> Lecture notes.<br>
 					
 							<!-- ARTICLE IS NO LONGER PUBLICLY AVAILABLE<strong><a href="http://www.drdobbs.com/tools/avoiding-classic-threading-problems/231000499"> Avoiding Classic Threading Problems</a></strong> ADVANCED DISCUSSION- Excellent article, dont worry about openMP and Intel Thread Checker<br> -->
-<!--				<td class="style_white ">
+				<td class="style_white ">
 				<strong><a href="https://github.com/CNUClasses/410_stop_threads.git"> Stopping a thread Cleanly</a></strong><br> 
 				<!-- <strong><a href="https://github.com/CNUClasses/spinlock.git"> A spinlock</a></strong> Do not use! Works but spikes CPU usage for all threads waiting for the lock!  <br /> -->
-<!--				<strong><a href="https://github.com/CNUClasses/mutex_thread.git"> Mutexes to synchronize threads</a></strong> Using a mutex to synchronize critical sections (as in multiple lines of code).  <br />
+				<strong><a href="https://github.com/CNUClasses/mutex_thread.git"> Mutexes to synchronize threads</a></strong> Using a mutex to synchronize critical sections (as in multiple lines of code).  <br />
 				<strong><a href="https://github.com/CNUClasses/mutex_lock_guard_sleep_for_yield.git">mutex_lock_guard_sleep_for_yield    </a></strong> Using a lock_guard to autounlock a mutex once the guard goes out of scope.  Also how to yield a threads timeslice or sleep the amount of time defined by std::chrono..<br />	
 				<strong><a href="https://github.com/CNUClasses/simple_deadlock.git"> Simple Deadlock examples</a></strong> Very simple examples of how deadlock can occur<br /> 
 				<strong><a href="https://github.com/CNUClasses/8_Deadlock.git"> A slightly more complex deadlock example</a></strong> <br /> <br>	
@@ -318,12 +328,13 @@
 					added a Theatre to ticket agent
 					at their request put the mutex to protect entry and exit from theatre outside class, showed how that led to messy code and hard to use class
 					showed where deadlock can occur in theatre if locking same mutex twice-->
-<!--				<strong ><a href="https://github.com/CNUClasses/12_thread_ticket_agent.git" style="color: #00cc00"> Thread ticket agent - in class lab</a></strong> Solution<br> 
+				<strong ><a href="https://github.com/CNUClasses/12_thread_ticket_agent.git" style="color: #00cc00"> Thread ticket agent - in class lab</a></strong> Solution<br> 
 				<strong><a href="https://github.com/CNUClasses/410_recursive_mutex.git">Recursive_mutex    </a></strong> A locking object that can be recursively locked (as long as you have 1 unlock() for every lock()).  This added functionality typically makes it harder to keep track of locked regions when designing your application. <br />	
 			
 	
 			</td>	
 		</tr>
+<!--
 		<tr>
 			<td class="style_white "><em>12,13</em></td>
 			<td class="style_white ">
