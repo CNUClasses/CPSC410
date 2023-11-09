@@ -248,18 +248,9 @@
 		</td>
 		</tr>
 		<tr>
-			<td class="style_white "><em>10</em></td>
+			<td class="style_white "><em>10,11</em></td>
 			<td class="style_white ">	
-				<strong style="color: #cc0000">Test 2, 11/14/23.  Includes everything from week 6 thru week 11 and project 3. 
-					The test will be given to you on paper. <br>
-					You may bring 1 sheet of paper with notes on both sides. No other resources are allowed. <br> 
-					You should know;<br>
-					-multilevel page tables<br>
-					-how to identify and protect critical sections in a multi threaded program<br>
-					-how to maximize concurrency in a multithreaded program.  For examaple, given 2 unrelated critical sections, you can protect each with a different mutex, and thus have 2 different threads executing in each critical section at the same time.<br>
-					-how to recognize and prevent deadlock<br>
-					-how to use mutexes in an exception prone environment (use a lock_guard that automatically unlocks)<br>
-				</strong> <br>  
+				
 					
 				<strong>External content</strong><br>	
 					Please read Chapter 28: Locks<BR>
@@ -296,7 +287,17 @@
 						<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/deadlock_intro.pdf"> Deadlock </a></strong> Lecture notes.<br>
 					
 							<!-- ARTICLE IS NO LONGER PUBLICLY AVAILABLE<strong><a href="http://www.drdobbs.com/tools/avoiding-classic-threading-problems/231000499"> Avoiding Classic Threading Problems</a></strong> ADVANCED DISCUSSION- Excellent article, dont worry about openMP and Intel Thread Checker<br> -->
-				<td class="style_white ">
+							<strong style="color: #cc0000">Test 2, 11/14/23.  Includes everything from week 6 thru week 11 and project 3. 
+								The test will be given to you on paper. <br>
+								You may bring 1 sheet of paper with notes on both sides. No other resources are allowed. <br> 
+								You should know;<br>
+								-multilevel page tables<br>
+								-how to identify and protect critical sections in a multi threaded program<br>
+								-how to maximize concurrency in a multithreaded program.  For examaple, given 2 unrelated critical sections, you can protect each with a different mutex, and thus have 2 different threads executing in each critical section at the same time.<br>
+								-how to recognize and prevent deadlock<br>
+								-how to use mutexes in an exception prone environment (use a lock_guard that automatically unlocks)<br>
+							</strong> <br>  
+							<td class="style_white ">
 				<strong><a href="https://github.com/CNUClasses/demo_producer_consumer_busywait.git" style="color: #00cc00"> Fix this non threadsafe code</a></strong>, here is the 
 					<strong><a href="https://github.com/CNUClasses/demo_producer_consumer_busywait_solution.git" style="color: #00cc00">Solution</a></strong><br> 
 				
@@ -330,7 +331,7 @@
 	
 			</td>	
 		</tr>
-<!--
+
 		<tr>
 			<td class="style_white "><em>12,13</em></td>
 			<td class="style_white ">
@@ -348,7 +349,7 @@
 				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/producer_consumer.pdf"> Producer Consumer, A common programming task</a></strong> Outline and solution flow.
 						
 				<!-- what happens when notify_one called and not notify all -->
-<!--			</td>
+			</td>
 			<td class="style_white ">	
 				
 				<strong><a href="https://github.com/CNUClasses/Simple_Condition_Variable.git">Simple Condition Variables</a></strong>Ordering thread operations.  Signaling between threads using a mutex a condition variable and a unique_lock<br/> 				
@@ -362,7 +363,8 @@
 				<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer_Back_And_Forth.git">Complex producer consumer problem, Producer signals consumer and vice versa</a></strong>Producer produces one then notifies consumer, consumer consumes one then notifies producer. Demoes effecient 2 way thread communications. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. <br>				
 	
 			</td>	
-		</tr>	<tr>
+		</tr>	
+<!--		<tr>
 			<td class="style_white "><em>13,14</em></td>
 			<td class="style_white ">
 				<strong style="color: #cc0000">Midterm 1 and Midterm 2 solutions on scholar under 'tests' in sidebar</strong><br><br>
