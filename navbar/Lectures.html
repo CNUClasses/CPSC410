@@ -282,16 +282,7 @@
 				
 						<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/deadlock_intro.pdf"> Deadlock </a></strong> Lecture notes.<br> 
 					
-							<strong style="color: #cc0000">Test 2, 4/16/24.  Includes everything from week 6 thru week 13 and project 3. 
-								The test will be given to you on paper. <br>
-								You may bring 1 sheet of paper with notes on both sides. No other resources are allowed. <br> 
-								You should know;<br>
-								<!-- -multilevel page tables<br> -->
-								-how to identify and protect critical sections in a multi threaded program<br>
-								-how to maximize concurrency in a multithreaded program.  For examaple, given 2 unrelated critical sections, you can protect each with a different mutex, and thus have 2 different threads executing in each critical section at the same time.<br>
-								-how to recognize and prevent deadlock<br>
-								-how to use mutexes in an exception prone environment (use a lock_guard that automatically unlocks)<br>
-							</strong> <br>  
+							
 							<td class="style_white ">
 				<strong><a href="https://github.com/CNUClasses/demo_producer_consumer_busywait.git" style="color: #00cc00"> Fix this non threadsafe code</a></strong>, here is the 
 					<strong><a href="https://github.com/CNUClasses/demo_producer_consumer_busywait_solution.git" style="color: #00cc00">Solution</a></strong><br> 
@@ -344,9 +335,19 @@
 				<strong><a href="https://baptiste-wicht.com/posts/2012/04/c11-concurrency-tutorial-advanced-locking-and-condition-variables.html"> Recursive Locks portion only</a></strong> This guy writes excellent C++ tutorials<br>
 				<br><strong>Lectures</strong><br>
 				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/Condition_Variables.pdf"> Condition Variables</a></strong> Demonstration slides<br>	
-				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/producer_consumer.pdf"> Producer Consumer, A common programming task</a></strong> Outline and solution flow. -->
+				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/producer_consumer.pdf"> Producer Consumer, A common programming task</a></strong> Outline and solution flow.<br><br>
 						
 				<!-- what happens when notify_one called and not notify all -->
+				<strong style="color: #cc0000">Test 2, 4/16/24.  Includes everything from week 6 thru week 13 and project 3. 
+					The test will be given to you on paper. <br>
+					You may bring 1 sheet of paper with notes on both sides. No other resources are allowed. <br> 
+					You should know;<br>
+					<!-- -multilevel page tables<br> -->
+					-how to identify and protect critical sections in a multi threaded program<br>
+					-how to maximize concurrency in a multithreaded program.  For examaple, given 2 unrelated critical sections, you can protect each with a different mutex, and thus have 2 different threads executing in each critical section at the same time.<br>
+					-how to recognize and prevent deadlock<br>
+					-how to use mutexes in an exception prone environment (use a lock_guard that automatically unlocks)<br>
+				</strong> <br>  
 			</td>
 			<td class="style_white ">	
 				
@@ -362,14 +363,14 @@
 	
 			</td>	
 		</tr>	
-<!--		<tr>
+		<tr>
 			<td class="style_white "><em>14</em></td>
 			<td class="style_white ">
-				<strong style="color: #cc0000">Midterm 1 and Midterm 2 solutions on scholar under 'tests' in sidebar</strong><br><br>
+				<!-- <strong style="color: #cc0000">Midterm 1 and Midterm 2 solutions on scholar under 'tests' in sidebar</strong><br><br> -->
 	
 				<strong style="color: #cc0000">Final Exam Schedule<BR>
-				Thursday December 7, 8am-10:30am (2.5 hours long)<br>
-				
+				9:30 am class- Friday  4/26, 8am-10:30am (2.5 hours long)<br>
+				11:00 am class- Tuesday 4/30, 11am-1:30pm (2.5 hours long)<br>
 				
 				<br>
 				Similar format to Midterms<br>
@@ -381,26 +382,26 @@
 				Topics:<br>
 				Difference between cooperative and pre emptive multitasking OS's<br>
 				Process scheduling, scheduling algorithms, metrics<br>
-				Virtual memory, simple and multilevel page tables, TLB's (there will probably be a multilevel page table problem)<br> -->
+				Virtual memory, simple and multilevel page tables, TLB's (there will probably be a multilevel page table problem)<br>
 				<!-- Policy (clock, FIFO, Optimal, Least Recently used, there will be at least one of these)<br> -->
 	
-				<!-- There will be be a multithreaded problem to solve that requires some combination of threads, mutexes, condition variables<br>
+				There will be be a multithreaded problem to solve that requires some combination of threads, mutexes, condition variables<br>
 				There will probably be a question on deadlock<br>
 				THATS IT FOR THE HINTS, GOOD LUCK!<BR></strong> <br>
 					<br><strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/Semaphore.pdf"> Semaphores </a></strong>Think of semaphores as bouncers at a nightclub. There are a dedicated number of people that are allowed in the club at once. If the club is full no one is allowed to enter, but as soon as 
 					one person leaves another person might enter. It's simply a way to limit the number of consumers for a specific resource. For example, to limit the number of simultaneous calls to a database in an application.Or to limit the number of widgets produced before stopping and waiting for a consumer to catch up.  
-					BTW a mutex can be represented as a semaphore that only lets one thread in the protected critical section at a time.<br> -->
+					BTW a mutex can be represented as a semaphore that only lets one thread in the protected critical section at a time.<br>
 		
 					<!-- <strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/chap5_dining_philosophers.pdf"> Using semaphores to solve dining philosophers problem </a></strong>handwritten lecture notes<br> -->
 		
-			<!-- </td>
+			</td>
 			<td class="style_white ">	
-				<br><strong><a href="https://github.com/CNUClasses/410_Semaphore_ConditionVar_Mutex_Thread_Producer_Consumer.git"> Single Producer, single consumer solution using semaphores</a></strong> Semaphore example<br /> -->
+				<br><strong><a href="https://github.com/CNUClasses/410_Semaphore_ConditionVar_Mutex_Thread_Producer_Consumer.git"> Single Producer, single consumer solution using semaphores</a></strong> Semaphore example<br /> 
 				<!-- <strong><a href="https://github.com/CNUClasses/410_Semaphore_Dining_Philosophers.git">Dining philosophers solution using semaphores (requires below library project)</a></strong><br/> 
 				<strong><a href="https://github.com/CNUClasses/410_Semaphore_Lib.git">Semaphore class library (inherently useful stuff should be placed in a library)</a></strong><br/>
-	
+				-->
 				</td>
-			-->
+			
 			</tr>
 	
 	
