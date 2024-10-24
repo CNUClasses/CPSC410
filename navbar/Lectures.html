@@ -220,9 +220,9 @@
 					<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/thread_race_condition_critical_sections_atomics.pdf">Threads, Race conditions, critical sections, atomics</a></strong>A multithreaded introduction<br>
 					
 					Takeaways:<br>
-					<li>Threads - know how to set up your C++ project to use threads (compiler set to use C++ 11 minimum, add the pthread library).  See <a href="https://github.com/CNUClasses/CPSC327/blob/master/content/Lectures/Eclipse_Customizations.pdf" > Eclipse Customizations</a> for more info.</li>
-					Threaded applications can be proven incorrect, but not correct since you cant control the scheduler.  Therefore testing is not as helpful.  Your only defense is to write perfect code, to do this there are some rules to follow;<br>
 					<ul>
+						<li>Threaded applications can be proven incorrect, but not correct since you cant control the scheduler.  Therefore testing is not as helpful.  Your only defense is to write perfect code, to do this there are some rules to follow;<br>
+
 						<li>If you start a thread (thread t1(fun)) you must wait for it to finish (t1.join())!</li>
 						<li>Never, ever rely on knowledge of system behavior to predict thread run order! You cant tell! (see <a href="https://github.com/CNUClasses/Thread_Race_Condition.git">Thread_Race_Condition</a>) </li>
 						<li>Learn to identify minimal critical sections.  You want them to be as small as possible since only 1 thread can be in the critical section at a time, the others block and wait.</li>
@@ -231,7 +231,7 @@
 						<li>the exception to this rule is a shared variable that is only read,  never written.  BUT the very first time it's written it needs protection (synchronization) on every read and write</li>
 						<li>Atomic classes are great, IFF you have a single line critical section.  For multiple lines, you need a mutex (coming next)</li>
 						
-					</ul> -->
+					</ul>
 					<!-- <strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/chapter_5_opencv_camera_bridge_view_HARD_race_condition_find_it.pdf"> A real world example race condition and critical section that is difficult to see</a></strong>  <br> -->
  	
 	
