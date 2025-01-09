@@ -82,7 +82,7 @@
 			<td class="style_white ">
 					<!--assign process load assignment-->
 			</td>
-		</tr>	
+<!--		</tr>	
 		<tr>
 			<td class="style_white "><em>2</em></td>
 			<td class="style_white ">
@@ -128,7 +128,7 @@
 				<!-- <strong><a href="https://github.com/CNUClasses/ostep-code/tree/master/cpu-api"> Linux fork(), exec(), wait() examples</a></strong> See README.md for compilation and running<br /> -->
 
 				<!--write a shell?-->
-			</td>
+<!--			</td>
 		</tr>
  		<tr>
 			<td class="style_white "><em>4</em></td>
@@ -147,7 +147,7 @@
 			</td>
 			<td class="style_white "> 
 			<!-- assign process scheduler ( MLFQ improve?  make API all pointers and create custom lists and queues) -->
-			</td>
+<!--			</td>
 		</tr>
 		<tr>
 			<td class="style_white "><em>4,5</em></td>
@@ -162,7 +162,7 @@
 				Please read:<br> 
 				Chapter 18: Paging Introduction<br>
 				<!-- really need to go over associative caches for TLB -->
-				Chapter 19: Paging: Faster Translations (TLBs)<br>
+<!--				Chapter 19: Paging: Faster Translations (TLBs)<br>
 				Chapter 20: Paging: Smaller Tables	<br>
 			</td>
 			<td class="style_white ">			
@@ -175,7 +175,7 @@
 				
 				<strong>Lectures</strong><br>	
 				<!-- <strong><a href="https://www.youtube.com/watch?v=WBh66fjb7EM&ab_channel=KeithPerkins">RECORDED: Translation Lookaside Buffer</a></strong>for Tuesday 2/20/24<br> -->
-				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/8_Paging.pdf">Paging</a></strong><br>
+<!--				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/8_Paging.pdf">Paging</a></strong><br>
 				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/Page_Table_Example.pdf">Simple page table examples</a></strong><br>	
 				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/9_TLB.pdf">Translation Lookaside Buffer (TLB)</a></strong><br>  <br>
 				
@@ -194,7 +194,7 @@
 				and Chapter 22: Beyond Physical Memory: Policies<br>-->
 				
 						
-			</td>
+<!--			</td>
 			<td class="style_white ">			
 			</td>
 		</tr>
@@ -207,7 +207,7 @@
 				Please read Chapter 26: Concurrency: An Introduction<BR>
 				<strong><a href="https://eli.thegreenplace.net/2016/c11-threads-affinity-and-hyperthreading/">(Advanced) C++11 threads, affinity and hyperthreading</a>Excellent! relates C++ threads to processor hardware</strong> <br><br> 
 		<!--Threads, using and debugging in a C++ project. Timing of thread launch and its effects. The non deterministic nature of a multithreaded program. -->
-			 <strong><a href="http://www.cplusplus.com/reference/atomic/"> Atomics </a></strong> Useful BUT can only synchronize 1 C++ operation at a time.<br>
+<!--			 <strong><a href="http://www.cplusplus.com/reference/atomic/"> Atomics </a></strong> Useful BUT can only synchronize 1 C++ operation at a time.<br>
 		
 				<strong style="color: #cc0000">NOTE: Projects that use threads require at least C++ 11 support.<br>
 				  To enable it, click on <br>the project name->Properties-> 
@@ -235,7 +235,7 @@
 					<!-- <strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/chapter_5_opencv_camera_bridge_view_HARD_race_condition_find_it.pdf"> A real world example race condition and critical section that is difficult to see</a></strong>  <br> -->
  	
 	
-		</td>
+<!--		</td>
 		<td class="style_white ">
 			<strong><a href="https://github.com/CNUClasses/thread_simple.git"> Single thread demo</a></strong> Use disassembly view to see that each c++ statement is equivelent to multiple assembly instructions.  An interrupt can be serviced after any assembly instruction, which may be in the middle of a C++ instruction<br />
 			<strong><a href="https://github.com/CNUClasses/thread_problem_atomic_solution.git"> Problems that threads can cause</a></strong> Running several threads, each reading and writing a global will cause unpredictable results. Demo using an atomic variable for a simple (but not generalizable to blocks of code>1 line) solution<br />
@@ -314,7 +314,7 @@
 				<strong ><a href="https://github.com/CNUClasses/s24_s2.git" style="color: #00cc00"> Section 2 (11am class) Thread ticket agent - in class lab </a></strong> Complete solution<br>  
 				
 				<!-- <strong ><a href="https://github.com/CNUClasses/ticket_agent_f23.git" style="color: #00cc00"> Thread ticket agent - in class lab Fall 23</a></strong> Partial Solution, CURRENTLY DEADLOCKS-will fix next class after deadlock lecture<br>  --> 
-				<strong ><a href="https://github.com/CNUClasses/12_thread_ticket_agent.git" style="color: #00cc00"> Thread ticket agent - in class lab</a></strong> Solution Spring23 (different than Fall23 solution since it was built based on spring 23 student s23)<br>
+<!--				<strong ><a href="https://github.com/CNUClasses/12_thread_ticket_agent.git" style="color: #00cc00"> Thread ticket agent - in class lab</a></strong> Solution Spring23 (different than Fall23 solution since it was built based on spring 23 student s23)<br>
 				<strong><a href="https://github.com/CNUClasses/410_recursive_mutex.git">Recursive_mutex    </a></strong> A locking object that can be recursively locked (as long as you have 1 unlock() for every lock()).  This added functionality typically makes it harder to keep track of locked regions when designing your application. <br />	
 			
 	
@@ -338,7 +338,7 @@
 				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/producer_consumer.pdf"> Producer Consumer, A common programming task</a></strong> Outline and solution flow.<br><br>
 						
 				<!-- what happens when notify_one called and not notify all -->
-				<strong style="color: #cc0000">Test 2, 11/21/24.  Includes everything from week 8 thru week 13 and project 3. 
+<!--				<strong style="color: #cc0000">Test 2, 11/21/24.  Includes everything from week 8 thru week 13 and project 3. 
 					The test will be given to you on paper. <br>
 					You may bring 1 sheet of paper with notes on both sides. No other resources are allowed. <br> 
 					You should know;<br>
@@ -371,7 +371,7 @@
 				<strong style="color: #cc0000">Final Exam Schedule<BR>
 				<!-- 9:30 am class- Friday  4/26, 8am-10:30am (2.5 hours long)<br>
 				11:00 am class- Tuesday 4/30, 11am-1:30pm (2.5 hours long)<br> -->
-				Friday December 13, 8-10:30am<br>
+<!--				Friday December 13, 8-10:30am<br>
 				
 				<br>
 				Similar format to Midterms<br>
@@ -386,7 +386,7 @@
 				Virtual memory, simple and multilevel page tables, TLB's (there will probably be a multilevel page table problem)<br>
 				<!-- Policy (clock, FIFO, Optimal, Least Recently used, there will be at least one of these)<br> -->
 	
-				There will be be at least 1 multithreaded problem to solve that requires some combination of threads, mutexes, condition variables, semaphores<br>
+<!--				There will be be at least 1 multithreaded problem to solve that requires some combination of threads, mutexes, condition variables, semaphores<br>
 				There will probably be a question on deadlock<br>
 				THATS IT FOR THE HINTS, GOOD LUCK!<BR></strong> <br>
 				<br><strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/Semaphore.pdf"> Semaphores </a></strong>Think of semaphores as bouncers at a nightclub. There are a dedicated number of people that are allowed in the club at once. If the club is full no one is allowed to enter, but as soon as 
@@ -395,13 +395,13 @@
 		
 				<!-- <strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/chap5_dining_philosophers.pdf"> Using semaphores to solve dining philosophers problem </a></strong>handwritten lecture notes<br> -->
 		
-			</td>
+<!--			</td>
 			<td class="style_white ">	
 				<br><strong><a href="https://github.com/CNUClasses/410_Semaphore_ConditionVar_Mutex_Thread_Producer_Consumer.git"> Single Producer, single consumer solution using semaphores</a></strong> Semaphore example<br /> 
 				<!-- <strong><a href="https://github.com/CNUClasses/410_Semaphore_Dining_Philosophers.git">Dining philosophers solution using semaphores (requires below library project)</a></strong><br/> 
 				<strong><a href="https://github.com/CNUClasses/410_Semaphore_Lib.git">Semaphore class library (inherently useful stuff should be placed in a library)</a></strong><br/>
  -->
-				</td>
+<!--				</td>
 			
 			</tr>
 	
