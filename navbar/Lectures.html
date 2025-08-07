@@ -84,7 +84,7 @@
 					<!--assign process load assignment-->
 			</td>
 		</tr>	
-		<tr>
+<!--		<tr>
 			<td class="style_white "><em>2</em></td>
 			<td class="style_white ">
 										
@@ -117,7 +117,7 @@ Please read <br>
   			    <strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/3_process_description_and_control.pdf">Process Description and Control</a></strong><br> 
 				  <!-- <strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/5_cpu_api_fork_wait_exec.pdf">fork(), wait(), exec() and a bit of terminal manipulation</a></strong><br>  -->
 				 
-				Please read Chapter 7: CPU Scheduling<br>
+<!--				Please read Chapter 7: CPU Scheduling<br>
 				and Chapter 8: The Multi-Level Feedback Queue<br>
 				and Chapter 9: Scheduling: Proportional Share<br><br>
 				NOTE:  We may circle back to Chapter 10: 'Multiprocessor Scheduling' at the end of the semester<BR>
@@ -128,7 +128,7 @@ Please read <br>
 				<!-- <strong><a href="https://github.com/CNUClasses/ostep-code/tree/master/cpu-api"> Linux fork(), exec(), wait() examples</a></strong> See README.md for compilation and running<br /> -->
 
 				<!--write a shell?-->
-			</td>
+<!--			</td>
 		</tr>
  		<tr>
 			<td class="style_white "><em>4</em></td>
@@ -147,7 +147,7 @@ Please read <br>
 			</td>
 			<td class="style_white "> 
 			<!-- assign process scheduler ( MLFQ improve?  make API all pointers and create custom lists and queues) -->
-			</td>
+<!--			</td>
 			
 		</tr>
 		<tr>
@@ -161,10 +161,10 @@ Please read <br>
 
 				
 					
-				Please read:<br> 
+<!--				Please read:<br> 
 				Chapter 18: Paging Introduction<br>
 				<!-- really need to go over associative caches for TLB -->
-				Chapter 19: Paging: Faster Translations (TLBs)<br>
+<!--				Chapter 19: Paging: Faster Translations (TLBs)<br>
 				Chapter 20: Paging: Smaller Tables	<br>
 			</td>
 			<td class="style_white ">			
@@ -177,7 +177,7 @@ Please read <br>
 				
 				<strong>Lectures</strong><br>	
 				<!-- <strong><a href="https://www.youtube.com/watch?v=WBh66fjb7EM&ab_channel=KeithPerkins">RECORDED: Translation Lookaside Buffer</a></strong>for Tuesday 2/20/24<br> -->
-				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/8_Paging.pdf">Paging</a></strong><br>
+<!--				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/8_Paging.pdf">Paging</a></strong><br>
 				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/Page_Table_Example.pdf">Simple page table examples</a></strong><br>	
 				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/9_TLB.pdf">Translation Lookaside Buffer (TLB)</a></strong><br>  <br>
 				
@@ -193,10 +193,10 @@ Please read <br>
 	
 				
 				 <!-- Please read Chapter 21: Beyond Physical Memory: Mechanisms<br> -->
-				<!-- and Chapter 22: Beyond Physical Memory: Policies<br>--> -->
+				<!-- and Chapter 22: Beyond Physical Memory: Policies<br>-->
 				
 						
-			</td>
+<!--			</td>
 			<td class="style_white ">			
 			</td>
 		</tr>
@@ -209,7 +209,7 @@ Please read <br>
 				Please read Chapter 26: Concurrency: An Introduction<BR>
 				<strong><a href="https://eli.thegreenplace.net/2016/c11-threads-affinity-and-hyperthreading/">(Advanced) C++11 threads, affinity and hyperthreading</a>Excellent! relates C++ threads to processor hardware</strong> <br><br> 
 		<!--Threads, using and debugging in a C++ project. Timing of thread launch and its effects. The non deterministic nature of a multithreaded program. -->
-			 <strong><a href="http://www.cplusplus.com/reference/atomic/"> Atomics </a></strong> Useful BUT can only synchronize 1 C++ operation at a time.<br>
+<!--			 <strong><a href="http://www.cplusplus.com/reference/atomic/"> Atomics </a></strong> Useful BUT can only synchronize 1 C++ operation at a time.<br>
 		
 				<!-- <strong style="color: #cc0000">NOTE: Projects that use threads require at least C++ 11 support.<br>
 				  To enable it, click on <br>the project name->Properties-> 
@@ -217,7 +217,7 @@ Please read <br>
 				  Then choose at least ISO C++11(-std=c++0x).  <br>
 				  Make sure you include the pthread library under GCC C++ linker->Libraries.  Add pthread in the Libraries (-l) pane on the right.</strong><br>                                  
 				<br>  -->
-			<strong>Lectures</strong><br>
+<!--			<strong>Lectures</strong><br>
 			<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/threads1.pdf"> Threads, an Introduction</a></strong><br>
 					<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/thread_race_condition_critical_sections_atomics.pdf">Threads, Race conditions, critical sections, atomics</a></strong>A multithreaded introduction<br>
 					
@@ -237,7 +237,7 @@ Please read <br>
 					<!-- <strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/chapter_5_opencv_camera_bridge_view_HARD_race_condition_find_it.pdf"> A real world example race condition and critical section that is difficult to see</a></strong>  <br> -->
  	
 	
-		</td>
+<!--		</td>
 		<td class="style_white ">
 			<strong><a href="https://github.com/CNUClasses/thread_simple.git"> Single thread demo</a></strong> Use disassembly view to see that each c++ statement is equivelent to multiple assembly instructions.  An interrupt can be serviced after any assembly instruction, which may be in the middle of a C++ instruction<br />
 			<strong><a href="https://github.com/CNUClasses/thread_problem_atomic_solution.git"> Problems that threads can cause</a></strong> Running several threads, each reading and writing a global will cause unpredictable results. Demo using an atomic variable for a simple (but not generalizable to blocks of code>1 line) solution<br />
@@ -317,7 +317,7 @@ Please read <br>
 				
 				<!-- <strong ><a href="https://github.com/CNUClasses/ticket_agent_f23.git" style="color: #00cc00"> Thread ticket agent - in class lab Fall 23</a></strong> Partial Solution, CURRENTLY DEADLOCKS-will fix next class after deadlock lecture<br>  --> 
 <!--				<strong ><a href="https://github.com/CNUClasses/12_thread_ticket_agent.git" style="color: #00cc00"> Thread ticket agent - in class lab</a></strong> Solution Spring23 (different than Fall23 solution since it was built based on spring 23 student s23)<br>-->
-				<strong><a href="https://github.com/CNUClasses/410_recursive_mutex.git">Recursive_mutex    </a></strong> A locking object that can be recursively locked (as long as you have 1 unlock() for every lock()).  This added functionality typically makes it harder to keep track of locked regions when designing your application. <br />	
+<!--				<strong><a href="https://github.com/CNUClasses/410_recursive_mutex.git">Recursive_mutex    </a></strong> A locking object that can be recursively locked (as long as you have 1 unlock() for every lock()).  This added functionality typically makes it harder to keep track of locked regions when designing your application. <br />	
 			
 	
 			</td>	
@@ -340,7 +340,7 @@ Please read <br>
 				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/producer_consumer.pdf"> Producer Consumer, A common programming task</a></strong> Outline and solution flow.<br><br>
 				<a href="https://youtu.be/loyIxp8M5I8">RECORDED, Project 4 Walk thru, Its a direct application of the producer/consumer problem </a>Tuesday 4/15/25 lecture: <br>		
 				<!-- what happens when notify_one called and not notify all -->
-				<strong style="color: #cc0000">Test 2, 4/17/25.  Includes everything from previous test thru week 13 and project 3. 
+<!--				<strong style="color: #cc0000">Test 2, 4/17/25.  Includes everything from previous test thru week 13 and project 3. 
 					The test will be given to you on paper. <br>
 					You may bring 1 sheet of paper with notes on both sides. No other resources are allowed. <br> 
 					You should know;<br>
@@ -388,7 +388,7 @@ Please read <br>
 				Virtual memory, simple and multilevel page tables, TLB's (there will probably be a multilevel page table problem)<br>
 				<!-- Policy (clock, FIFO, Optimal, Least Recently used, there will be at least one of these)<br> -->
 	
-				There will be be at least 1 multithreaded problem to solve that requires some combination of threads, mutexes, condition variables, semaphores<br>
+<!--				There will be be at least 1 multithreaded problem to solve that requires some combination of threads, mutexes, condition variables, semaphores<br>
 				There will probably be a question on deadlock<br>
 				THATS IT FOR THE HINTS, GOOD LUCK!<BR></strong> <br>
 				<br><strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/Semaphore.pdf"> Semaphores </a></strong>Think of semaphores as bouncers at a nightclub. There are a dedicated number of people that are allowed in the club at once. If the club is full no one is allowed to enter, but as soon as 
@@ -397,7 +397,7 @@ Please read <br>
 		
 				 <strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/chap5_dining_philosophers.pdf"> Using semaphores to solve dining philosophers problem </a></strong>handwritten lecture notes<br> -->
 		
-			</td>
+<!--			</td>
 			<td class="style_white ">	
 				<br><strong><a href="https://github.com/CNUClasses/410_Semaphore_ConditionVar_Mutex_Thread_Producer_Consumer.git"> Single Producer, single consumer solution using semaphores</a></strong> Semaphore example<br /> 
 				<strong><a href="https://github.com/CNUClasses/410_Semaphore_Dining_Philosophers.git">Dining philosophers solution using semaphores (requires below library project)</a></strong><br/> 
@@ -406,7 +406,7 @@ Please read <br>
 				</td>
 			
 			</tr>
-	
+-->	
 	
 
 	</table>
