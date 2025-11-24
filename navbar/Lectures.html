@@ -355,8 +355,8 @@ Please read <br>
 				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/producer_consumer.pdf"> Producer Consumer, A common programming task</a></strong> Outline and solution flow.<br><br>
 				<!-- <a href="https://youtu.be/loyIxp8M5I8">RECORDED, Project 4 Walk thru, Its a direct application of the producer/consumer problem </a>Tuesday 4/15/25 lecture: <br>		 -->
 				
-<			</td>
-			<td class="style_white ">	
+			</td>
+			<td class="style_white "	
 				
 				<strong><a href="https://github.com/CNUClasses/Simple_Condition_Variable.git">Simple Condition Variables</a></strong>Ordering thread operations.  Signaling between threads using a mutex a condition variable and a unique_lock<br/> 				
 				<strong><a href="https://github.com/CNUClasses/410_ConditionVar_Mutex.git">Simple Condition Variables</a></strong>>What happens when you do not put cv.wait(...) in a while loop. (BTW you must always put cv.wait(...) in a while loop!) <br/> 
@@ -373,35 +373,44 @@ Please read <br>
 		<tr>
 			<td class="style_white "><em>14,15</em></td>
 			<td class="style_white ">
-				<strong style="color: #cc0000">Midterm 1 and Midterm 2 solutions on scholar</strong><br><br> 
+				<strong style="color: #cc0000">Midterm 1 and Midterm 2 solutions on scholar<br><br> 
 	
-				<strong style="color: #cc0000">Final Exam Schedule<BR>
-				Thursday December 11, 8am-10:30am
+				Final Exam Schedule:
+				<ul><li>Thursday December 11, 8am-10:30am</li>
+				</ul>
 				<!-- 9:30 am class- Friday  5/2, 8am-10:30am (2.5 hours long)<br>
 				11:00 am class- Tuesday 5/6, 11am-1:30pm (2.5 hours long)<br> -->
 
 				
-				<br>
-				Similar format to Midterms<br>
-				The test will be given to you on paper. <br>
-				You may bring 5 sheets of paper with notes on both sides. No other resources are allowed.<br> 
-				<br>
-				It's Comprehensive:<br>
-				All course material is fair game<br><br>
-				Topics:<br>
-				Difference between cooperative and pre emptive multitasking OS's<br>
-				Process scheduling, scheduling algorithms, metrics<br>
-				Virtual memory, simple and multilevel page tables, TLB's (there will probably be a multilevel page table problem)<br>
-				<!-- Policy (clock, FIFO, Optimal, Least Recently used, there will be at least one of these)<br> -->
-	
-				There will be be at least 1 multithreaded problem to solve that requires some combination of threads, mutexes, condition variables, semaphores<br>
-				There will probably be a question on deadlock<br>
-				THATS IT FOR THE HINTS, GOOD LUCK!<BR></strong> <br>
-				<br><strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/Semaphore.pdf"> Semaphores </a></strong>Think of semaphores as bouncers at a nightclub. There are a dedicated number of people that are allowed in the club at once. If the club is full no one is allowed to enter, but as soon as 
-				one person leaves another person might enter. It's simply a way to limit the number of consumers for a specific resource. For example, to limit the number of simultaneous calls to a database in an application.Or to limit the number of widgets produced before stopping and waiting for a consumer to catch up.  
-				BTW a mutex can be represented as a semaphore that only lets one thread in the protected critical section at a time.<br>
+			
+				Overview:
+				<ul>
+					<li>It's comprehensive</li>
+					<li>All course material is fair game</li>
+					<li>Similar format to Midterms</li>
+					<li>The test will be given to you on paper</li>
+					<li>You may bring 5 sheets of paper with notes on both sides; no other resources are allowed.</li>
+				</ul>
+			
+				
+				Topics:
+			
+				<ul>
+					<li>Difference between cooperative and pre emptive multitasking OS's</li>
+					<li>Process scheduling, scheduling algorithms, metrics</li>
+					<li>Virtual memory, simple and multilevel page tables, TLB's (there will probably be a multilevel page table problem)</li>
+					<!-- <li>Policy (clock, FIFO, Optimal, Least Recently used, there will be at least one of these)</li> -->
+					<li>There will be be at least 1 multithreaded problem to solve that requires some combination of threads, mutexes, condition variables, semaphores</li>
+					<li>There will probably be a question on deadlock</li>
+					<li>THATS IT FOR THE HINTS, GOOD LUCK!</li>
+				</ul>
+				</strong>
+
+				<strong>Lectures</strong><br>
+				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/Semaphore.pdf"> Semaphores </a></strong>
+				Think of semaphores as bouncers at a nightclub. There are a dedicated number of people that are allowed in the club at once. If the club is full no one is allowed to enter, but as soon as one person leaves another person might enter. It's simply a way to limit the number of consumers for a specific resource. For example, to limit the number of simultaneous calls to a database in an application.Or to limit the number of widgets produced before stopping and waiting for a consumer to catch up. BTW a mutex can be represented as a semaphore that only lets one thread in the protected critical section at a time.<br>
 		
-				 <strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/chap5_dining_philosophers.pdf"> Using semaphores to solve dining philosophers problem </a></strong>handwritten lecture notes<br> -->		
+				 <strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/chap5_dining_philosophers.pdf"> Using semaphores to solve dining philosophers problem </a></strong>handwritten lecture notes<br> 		
 			</td>
 			<td class="style_white ">	
 				<br><strong><a href="https://github.com/CNUClasses/410_Semaphore_ConditionVar_Mutex_Thread_Producer_Consumer.git"> Single Producer, single consumer solution using semaphores</a></strong> Semaphore example<br /> 
