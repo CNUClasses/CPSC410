@@ -410,7 +410,7 @@ Please read <br>
 				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/Semaphore.pdf"> Semaphores </a></strong>
 				Think of semaphores as bouncers at a nightclub. There are a dedicated number of people that are allowed in the club at once. If the club is full no one is allowed to enter, but as soon as one person leaves another person might enter. It's simply a way to limit the number of consumers for a specific resource. For example, to limit the number of simultaneous calls to a database in an application.Or to limit the number of widgets produced before stopping and waiting for a consumer to catch up. BTW a mutex can be represented as a semaphore that only lets one thread in the protected critical section at a time.<br>
 		
-				 <strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/chap5_dining_philosophers.pdf"> Using semaphores to solve dining philosophers problem </a></strong>handwritten lecture notes<br> 		
+				 <!-- <strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/chap5_dining_philosophers.pdf"> Using semaphores to solve dining philosophers problem </a></strong>handwritten lecture notes<br> 		 -->
 			</td>
 			<td class="style_white ">	
 				<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer.git"> Simple producer consumer problem. Producer signals consumer.</a></strong>Single Producer, Single Consumer: Producer produces as fast as it can and notifies consumer, consumer consumes as fast as it can. Demoes effecient 1 way thread communication. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. Can have multiple consumers.<br>
@@ -419,12 +419,62 @@ Please read <br>
 				<strong><a href="https://github.com/CNUClasses/410_Producer_Consumer_Back_And_Forth.git">Complex producer consumer problem, Producer signals consumer and vice versa</a></strong>Producer produces one then notifies consumer, consumer consumes one then notifies producer. Demoes effecient 2 way thread communications. Consumer will exit when global variable bDone is true and global count, gCount, of produced objects is 0. <br>				
 
 				<br><strong><a href="https://github.com/CNUClasses/410_Semaphore_ConditionVar_Mutex_Thread_Producer_Consumer.git"> Single Producer, single consumer solution using semaphores</a></strong> Semaphore example<br /> 
-				<strong><a href="https://github.com/CNUClasses/410_Semaphore_Dining_Philosophers.git">Dining philosophers solution using semaphores (requires below library project)</a></strong><br/> 
-				<strong><a href="https://github.com/CNUClasses/410_Semaphore_Lib.git">Semaphore class library (inherently useful stuff should be placed in a library)</a></strong><br/>
+				<!-- <strong><a href="https://github.com/CNUClasses/410_Semaphore_Dining_Philosophers.git">Dining philosophers solution using semaphores (requires below library project)</a></strong><br/> 
+				<strong><a href="https://github.com/CNUClasses/410_Semaphore_Lib.git">Semaphore class library (inherently useful stuff should be placed in a library)</a></strong><br/> -->
 
 				</td>
 			
 			</tr>
 	
+					<tr>
+			<td class="style_white "><em>15</em></td>
+			<td class="style_white ">
+				<strong style="color: #cc0000">Midterm 1 and Midterm 2 solutions on scholar</strong><br><br>
+	
+				<strong style="color: #cc0000">Final Exam Schedule:
+				<ul><li>Thursday, Dec 10 8am-10:30am</li>
+				</ul>
+				<!-- 9:30 am class- Friday  5/2, 8am-10:30am (2.5 hours long)<br>
+				11:00 am class- Tuesday 5/6, 11am-1:30pm (2.5 hours long)<br> -->
+
+				
+				Overview:
+				<ul>
+					<li>It's comprehensive</li>
+					<li>All course material is fair game</li>
+					<li>Similar format to Midterms</li>
+					<li>The test will be given to you on paper</li>
+					<li>You may bring 5 sheets of paper with notes on both sides; no other resources are allowed.</li>
+				</ul></strong>
+			
+				
+<!--				Topics:
+			
+				<ul>
+					<li>Difference between cooperative and pre emptive multitasking OS's</li>
+					<li>Process scheduling, scheduling algorithms, metrics</li>
+					<li>Virtual memory, simple and multilevel page tables, TLB's (there will probably be a multilevel page table problem)</li>
+					<!-- <li>Policy (clock, FIFO, Optimal, Least Recently used, there will be at least one of these)</li> 
+					<li>There will be be at least 1 multithreaded problem to solve that requires some combination of threads, mutexes, condition variables, semaphores</li>
+					<li>There will probably be a question on deadlock</li>
+					<li>THATS IT FOR THE HINTS, GOOD LUCK!</li>
+				</ul>
+				</strong>
+			-->
+				<strong>External content</strong><br>
+					Please read Chapters 36, 37 and 44<BR>	
+					<!-- Please read Chapters 39, 40 and 42<BR> -->
+				<strong>Lectures</strong><br>
+				<strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/Persistence_Devices_Disks_and_SSDs.pdf">Persistence I-Devices, Disks and SSDs</a></strong>how the OS talks to storage devices, why hard disks run hundreds of times faster on sequential than random I/O, and how SSDs use a flash translation layer to work around flash's erase-before-write rule. <br><br>
+				<!-- <a href="https://youtu.be/loyIxp8M5I8">RECORDED, Project 4 Walk thru, Its a direct application of the producer/consumer problem </a>Tuesday 4/15/25 lecture: <br>		 -->
+				<!-- <strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/Persistence_File_Systems_and_Crash_Consistency.pdf"> Persistence II - File Systems and Crash Consistency </a></strong> how files and directories map onto disk blocks in a simple file system, why even small operations cost several disk I/Os, and how fsck and journaling keep the file system consistent after a crash. -->
+		
+				 <!-- <strong><a href="https://cnuclasses.github.io/CPSC410/content/Lectures/chap5_dining_philosophers.pdf"> Using semaphores to solve dining philosophers problem </a></strong>handwritten lecture notes<br> 		 -->
+			</td>
+			<td class="style_white ">	
+
+				</td>
+			
+			</tr>
 	</table>
     </section>  
